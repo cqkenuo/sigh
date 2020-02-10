@@ -1,361 +1,1017 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset=utf-8>
-        <meta http-equiv=X-UA-Compatible content="IE=edge">
-        <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-        <link rel=icon href=favicon.ico>
-        <title>个人中心</title>
-        <link href=./dist/css/app.css rel="stylesheet">
-        <link href=./dist/css/main.css rel="stylesheet">
-        <link href=./dist/css/user.css rel="stylesheet">
-        <link href=./dist/css/menu.css rel="stylesheet">
-        <link href="./dist/css/webuploader.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="app">
-          <div data-v-4c978c7a="" class="lay-main ivu-layout">
-            <div data-v-4c978c7a="" class="ivu-layout-header">
-              <div data-v-4c978c7a="" class="header-col logo">
-                  <a data-v-4c978c7a="" href="./dashboard.html" class="router-link-exact-active router-link-active">
-                      <img data-v-4c978c7a="" src="./dist/images/logo.png" alt=""><span data-v-4c978c7a="">iOS App超级签名</span>
-                  </a>
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel=icon href=favicon.ico>
+  <title>个人中心</title>
+  <link href=./dist/css/app.css rel="stylesheet">
+  <link href=./dist/css/main.css rel="stylesheet">
+  <link href=./dist/css/user.css rel="stylesheet">
+  <link href=./dist/css/menu.css rel="stylesheet">
+  <link href="./dist/css/webuploader.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div data-v-4c978c7a="" class="lay-main ivu-layout">
+      <div data-v-4c978c7a="" class="ivu-layout-header">
+        <div data-v-4c978c7a="" class="header-col logo">
+          <a data-v-4c978c7a="" href="./dashboard.html" class="router-link-exact-active router-link-active">
+            <img data-v-4c978c7a="" src="./dist/images/logo.png" alt=""><span data-v-4c978c7a="">iOS App超级签名</span>
+          </a>
+        </div>
+        <div data-v-4c978c7a="" class="header-col breadcrumb">
+          <div data-v-4c978c7a="" class="serve-info">
+            <span data-v-4c978c7a="">技术客服：</span>
+            <ul data-v-4c978c7a="" class="serve-qq-list">
+              <li data-v-4c978c7a="">Telegram : +13214095102</li>
+            </ul>
+          </div>
+        </div>
+        <div data-v-4c978c7a="" class="header-col user">
+          <div data-v-4c978c7a="" class="ivu-dropdown">
+            <div class="ivu-dropdown-rel">
+              <button data-v-4c978c7a="" class="Poptip-btn">
+                <span data-v-4c978c7a="" class="ml10">17603326303</span>
+                <i data-v-4c978c7a="" class="arrow-down s-icon s-icon-arrow-down"
+                  style="font-size: 10px; color: rgb(127, 143, 164);"></i>
+                <img data-v-4c978c7a="" src="./dist/images/avatar.png" alt="" class="poptip-btn-img">
+              </button>
+            </div>
+            <div class="ivu-select-dropdown" style="display: none;">
+              <ul data-v-4c978c7a="" class="ivu-dropdown-menu">
+                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                    class="s-icon s-icon-modify"></i><span data-v-4c978c7a="">修改资料</span></li>
+                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                    class="s-icon s-icon-sign-out"></i><span data-v-4c978c7a="">退出</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-v-4c978c7a="" class="lay-body ivu-layout ivu-layout-has-sider">
+        <div data-v-4c978c7a="" class="ivu-layout-sider">
+          <span class="ivu-layout-sider-zero-width-trigger" style="display: none;"><i
+              class="ivu-icon ivu-icon-ios-menu"></i></span>
+          <div class="ivu-layout-sider-children">
+            <ul data-v-5c2ab2a8="" data-v-4c978c7a="" class="ivu-menu ivu-menu-light ivu-menu-vertical" width="200px">
+              <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self"
+                class="ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i data-v-5c2ab2a8=""
+                  class="iconfont icondailishangshouye"></i>首页</a>
+              <a data-v-5c2ab2a8="" href="./settings.html" target="_self" class="menusec ivu-menu-item"><i
+                  data-v-5c2ab2a8="" class="menusecond appstore-iconfont appstore-iconxitongshezhi"
+                  style="font-size: 21px;"></i>账户设置</a>
+              <a data-v-5c2ab2a8="" href="./downloadlog.html" target="_self" class="ivu-menu-item"><i data-v-5c2ab2a8=""
+                  class="s-icon s-icon-ad-plan"></i>下载记录</a>
+              <hr data-v-5c2ab2a8="" class="menu-hr">
+              <div data-v-5c2ab2a8="" class="add-app-layer">
+                <button id="postApp" data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary"><i
+                    data-v-5c2ab2a8="" class="s-icon s-icon-drop-down" data-v-278d6aea=""
+                    style="font-size: 15px; color: rgb(255, 255, 255);"></i><span data-v-5c2ab2a8=""
+                    data-v-278d6aea="">发布应用</span></button>
               </div>
-              <div data-v-4c978c7a="" class="header-col breadcrumb">
-                <div data-v-4c978c7a="" class="serve-info">
-                  <span data-v-4c978c7a="">技术客服：</span>
-                  <ul data-v-4c978c7a="" class="serve-qq-list">
-                    <li data-v-4c978c7a="">Telegram : +13214095102</li>
-                  </ul>
+            </ul>
+          </div>
+        </div>
+        <div data-v-4c978c7a="" class="s-main-content ivu-layout-content">
+          <div data-v-0ca61d58="" data-v-4c978c7a="" class="content ivu-layout">
+            <div data-v-0ca61d58="" class="header ivu-row">
+              <h1 data-v-0ca61d58="">账户资料<div data-v-0ca61d58="" class="error-info">余额不足，请尽快充值</div>
+              </h1>
+            </div>
+            <div data-v-0ca61d58="" class="header mt20 ivu-row">
+              <div data-v-0ca61d58="" class="ivu-col ivu-col-span-16">
+                <div data-v-0ca61d58="" class="main-card">
+                  <div data-v-0ca61d58="" slot="title" class="info-head">
+                    <div data-v-0ca61d58="" class="user-info">
+                      <div data-v-0ca61d58="">
+                        <img data-v-0ca61d58="" src="./dist/images/avatar.png" alt="">
+                      </div>
+                      <div data-v-0ca61d58="" class="user-warpper">
+                        <h3 data-v-0ca61d58=""><span data-v-0ca61d58="">17603326303</span><span data-v-0ca61d58=""
+                            class="name-right">未实名认证</span></h3>
+                        <div data-v-0ca61d58=""><span data-v-0ca61d58="" class="appstore-iconfont appstore-icongerenban"
+                            style="color: rgb(41, 142, 255); margin-right: 4px;"></span><span
+                            data-v-0ca61d58="">个人版</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-v-0ca61d58="" class="footer">
+                    <div data-v-0ca61d58="" class="today-info-wrap">
+                      <div data-v-0ca61d58="" class="main-footer-item">
+                        <div data-v-0ca61d58="" class="foot-content">
+                          <p data-v-0ca61d58="" class="title">今日PV
+                            <div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip">
+                              <div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58=""
+                                  class="tips s-icon s-icon-explain" data-v-02012426=""
+                                  style="font-size: 16px; color: rgb(204, 204, 204);"></i></div>
+                              <div data-v-02012426="" class="ivu-poptip-popper"
+                                style="display: none; position: absolute; will-change: top, left; top: 230px; left: 86px;"
+                                x-placement="bottom-start">
+                                <div data-v-02012426="" class="ivu-poptip-content">
+                                  <div data-v-02012426="" class="ivu-poptip-arrow"></div>
+                                  <!---->
+                                  <div data-v-02012426="" class="ivu-poptip-inner">
+                                    <!---->
+                                    <div data-v-02012426="" class="ivu-poptip-body">
+                                      <div data-v-02012426="" class="ivu-poptip-body-content">
+                                        <div data-v-0ca61d58="" class="tips-table">
+                                          今日PV：1天（00:00-24:00）之内，每打开一次下载页，记录1个PV，一天内同一用户多次打开同一页面PV计算多次。</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </p>
+                          <p data-v-0ca61d58="" class="result">0</p>
+                          <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
+                        </div>
+                      </div>
+                      <div data-v-0ca61d58="" class="main-footer-item">
+                        <div data-v-0ca61d58="" class="foot-content">
+                          <p data-v-0ca61d58="" class="title">今日UV
+                            <div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip">
+                              <div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58=""
+                                  class="tips s-icon s-icon-explain" data-v-02012426=""
+                                  style="font-size: 16px; color: rgb(204, 204, 204);"></i></div>
+                              <div data-v-02012426="" class="ivu-poptip-popper"
+                                style="display: none; position: absolute; will-change: top, left; top: 230px; left: 273px;"
+                                x-placement="bottom-start">
+                                <div data-v-02012426="" class="ivu-poptip-content">
+                                  <div data-v-02012426="" class="ivu-poptip-arrow"></div>
+                                  <!---->
+                                  <div data-v-02012426="" class="ivu-poptip-inner">
+                                    <!---->
+                                    <div data-v-02012426="" class="ivu-poptip-body">
+                                      <div data-v-02012426="" class="ivu-poptip-body-content">
+                                        <div data-v-0ca61d58="" class="tips-table">
+                                          UV值：1天（00:00-24:00）之内，访问下载页的不重复用户数（以浏览器cookie为依据），一天内同一访客多次访问下载页只被计算1次。</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </p>
+                          <p data-v-0ca61d58="" class="result">0</p>
+                          <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
+                        </div>
+                      </div>
+                      <div data-v-0ca61d58="" class="main-footer-item">
+                        <div data-v-0ca61d58="" class="foot-content">
+                          <p data-v-0ca61d58="" class="title">今日IP<div data-v-02012426="" data-v-0ca61d58=""
+                              class="ivu-poptip">
+                              <div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58=""
+                                  class="tips s-icon s-icon-explain" data-v-02012426=""
+                                  style="font-size: 16px; color: rgb(204, 204, 204);"></i></div>
+                              <div data-v-02012426="" class="ivu-poptip-popper"
+                                style="display: none; position: absolute; will-change: top, left; top: 230px; left: 450px;"
+                                x-placement="bottom-start">
+                                <div data-v-02012426="" class="ivu-poptip-content">
+                                  <div data-v-02012426="" class="ivu-poptip-arrow"></div>
+                                  <!---->
+                                  <div data-v-02012426="" class="ivu-poptip-inner">
+                                    <!---->
+                                    <div data-v-02012426="" class="ivu-poptip-body">
+                                      <div data-v-02012426="" class="ivu-poptip-body-content">
+                                        <div data-v-0ca61d58="" class="tips-table">
+                                          IP值：1天（00:00-24:00）之内，访问下载页的不重复IP数。一天内相同IP地址多次访问下载页只被计算1次。</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </p>
+                          <p data-v-0ca61d58="" class="result">0</p>
+                          <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
+                        </div>
+                      </div>
+                      <div data-v-0ca61d58="" class="main-footer-item">
+                        <div data-v-0ca61d58="" class="foot-content no-border">
+                          <p data-v-0ca61d58="" class="title">今日下载<div data-v-02012426="" data-v-0ca61d58=""
+                              class="ivu-poptip">
+                              <div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58=""
+                                  class="tips s-icon s-icon-explain" data-v-02012426=""
+                                  style="font-size: 16px; color: rgb(204, 204, 204);"></i></div>
+                              <div data-v-02012426="" class="ivu-poptip-popper"
+                                style="display: none; position: absolute; will-change: top, left; top: 230px; left: 650px;"
+                                x-placement="bottom-start">
+                                <div data-v-02012426="" class="ivu-poptip-content">
+                                  <div data-v-02012426="" class="ivu-poptip-arrow"></div>
+                                  <!---->
+                                  <div data-v-02012426="" class="ivu-poptip-inner">
+                                    <!---->
+                                    <div data-v-02012426="" class="ivu-poptip-body">
+                                      <div data-v-02012426="" class="ivu-poptip-body-content">
+                                        <div data-v-0ca61d58="" class="tips-table">
+                                          今日下载：1天（00:00-24:00）之内，每下载一次应用，记录1个下载，一天内同一用户多次下载同一应用，下载数只被记录1次。</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </p>
+                          <p data-v-0ca61d58="" class="result">0</p>
+                          <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div data-v-4c978c7a="" class="header-col user">
-                <div data-v-4c978c7a="" class="ivu-dropdown">
-                  <div class="ivu-dropdown-rel">
-                    <button data-v-4c978c7a="" class="Poptip-btn">
-                      <span data-v-4c978c7a="" class="ml10">17603326303</span>
-                      <i data-v-4c978c7a="" class="arrow-down s-icon s-icon-arrow-down" style="font-size: 10px; color: rgb(127, 143, 164);"></i>
-                      <img data-v-4c978c7a="" src="./dist/images/avatar.png" alt="" class="poptip-btn-img">
-                    </button>
+              <div data-v-0ca61d58="" class="ivu-col ivu-col-span-8">
+                <div data-v-0ca61d58="" class="container">
+                  <div data-v-0ca61d58="" class="ivu-row">
+                    <div data-v-0ca61d58="" class="ivu-col ivu-col-span-24">
+                      <div data-v-0ca61d58="" class="mini-card ivu-row">
+                        <div data-v-0ca61d58="" class="card-icon ivu-col ivu-col-span-6">
+                          <img data-v-0ca61d58="" src="./dist/images/notes.png" alt="">
+                        </div>
+                        <div data-v-0ca61d58="" class="card-content ivu-col ivu-col-span-18">
+                          <p data-v-0ca61d58="" class="title">基本信息</p>
+                          <p data-v-0ca61d58="" class="content">查看和修改账户的基本资料</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ivu-select-dropdown" style="display: none;">
-                    <ul data-v-4c978c7a="" class="ivu-dropdown-menu">
-                      <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a="" class="s-icon s-icon-modify"></i><span data-v-4c978c7a="">修改资料</span></li>
-                      <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a="" class="s-icon s-icon-sign-out"></i><span data-v-4c978c7a="">退出</span></li>
-                    </ul>
+                  <div data-v-0ca61d58="" class="ivu-row">
+                    <div data-v-0ca61d58="" class="ivu-col ivu-col-span-24">
+                      <div data-v-0ca61d58="" class="mini-card ivu-row">
+                        <div data-v-0ca61d58="" class="card-icon ivu-col ivu-col-span-6">
+                          <img data-v-0ca61d58="" src="./dist/images/banknote.png" alt="">
+                        </div>
+                        <div data-v-0ca61d58="" class="card-content ivu-col ivu-col-span-18">
+                          <p data-v-0ca61d58="" class="title">财务信息</p>
+                          <p data-v-0ca61d58="" class="content">查看消费记录和充值记录</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div data-v-4c978c7a="" class="lay-body ivu-layout ivu-layout-has-sider">
-              <div data-v-4c978c7a="" class="ivu-layout-sider">
-                <span class="ivu-layout-sider-zero-width-trigger" style="display: none;"><i class="ivu-icon ivu-icon-ios-menu"></i></span>
-                <div class="ivu-layout-sider-children">
-                  <ul data-v-5c2ab2a8="" data-v-4c978c7a="" class="ivu-menu ivu-menu-light ivu-menu-vertical" width="200px">
-                    <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i data-v-5c2ab2a8="" class="iconfont icondailishangshouye"></i>首页</a>
-                    <a data-v-5c2ab2a8="" href="./settings.html" target="_self" class="menusec ivu-menu-item"><i data-v-5c2ab2a8="" class="menusecond appstore-iconfont appstore-iconxitongshezhi" style="font-size: 21px;"></i>账户设置</a>
-                    <a data-v-5c2ab2a8="" href="./downloadlog.html" target="_self" class="ivu-menu-item"><i data-v-5c2ab2a8="" class="s-icon s-icon-ad-plan"></i>下载记录</a>
-                    <hr data-v-5c2ab2a8="" class="menu-hr">
-                    <div data-v-5c2ab2a8="" class="add-app-layer">
-                      <button id="postApp" data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary"><i data-v-5c2ab2a8="" class="s-icon s-icon-drop-down" data-v-278d6aea="" style="font-size: 15px; color: rgb(255, 255, 255);"></i><span data-v-5c2ab2a8="" data-v-278d6aea="">发布应用</span></button>
-                    </div>
-                  </ul>
+            <div data-v-0ca61d58="" class="header ivu-row">
+              <h1 data-v-0ca61d58="">发布的应用</h1>
+            </div>
+            <div data-v-0ca61d58="" class="header mt20 mb40 tab-content ivu-layout-content">
+              <div data-v-0ca61d58="" class="index-table ivu-table-wrapper">
+                <div class="ivu-table ivu-table-default">
+                  <!---->
+                  <div class="ivu-table-header">
+                    <table cellspacing="0" cellpadding="0" style="width: 1107px;">
+                      <colgroup>
+                        <col width="62">
+                        <col width="130">
+                        <col width="130">
+                        <col width="130">
+                        <col width="130">
+                        <col width="131">
+                        <col width="131">
+                        <col width="131">
+                        <col width="131">
+                        <!---->
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th class="ivu-table-column-center">
+                            <div class="ivu-table-cell ivu-table-cell-with-selection"><label
+                                class="ivu-checkbox-wrapper ivu-checkbox-default"><span class="ivu-checkbox"><span
+                                    class="ivu-checkbox-inner"></span><input type="checkbox"
+                                    class="ivu-checkbox-input"></span>
+                                <!----></label></div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">应用名称</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">版本</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell">
+                              <div data-v-02012426="" class="color ivu-poptip">
+                                <div data-v-02012426="" class="ivu-poptip-rel">总下载量<i class="icon s-icon s-icon-explain"
+                                    data-v-02012426="" style="font-size: 16px; color: rgb(197, 204, 212);"></i></div>
+                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                  style="display: none; position: absolute; will-change: top, left; top: -133px; left: 341px;"
+                                  x-placement="top-start" x-out-of-boundaries="">
+                                  <div data-v-02012426="" class="ivu-poptip-content">
+                                    <div data-v-02012426="" class="ivu-poptip-arrow"></div>
+                                    <!---->
+                                    <div data-v-02012426="" class="ivu-poptip-inner">
+                                      <!---->
+                                      <div data-v-02012426="" class="ivu-poptip-body">
+                                        <div data-v-02012426="" class="ivu-poptip-body-content">
+                                          <div class="tips-table">
+                                            <p>该应用的历史总下载次数。</p>一个用户下载多次该应用，只记录一次。已下载过您其他应用的用户第一次下载此应用，会记录这次下载，但只计算一次消费。
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">下载地址</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">创建时间</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">上架状态</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">下载码</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <th class="">
+                            <div class="ivu-table-cell"><span class="">操作</span>
+                              <!---->
+                              <!---->
+                            </div>
+                          </th>
+                          <!---->
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="ivu-table-body">
+                    <table cellspacing="0" cellpadding="0" style="width: 1107px;">
+                      <colgroup>
+                        <col width="62">
+                        <col width="130">
+                        <col width="130">
+                        <col width="130">
+                        <col width="130">
+                        <col width="131">
+                        <col width="131">
+                        <col width="131">
+                        <col width="131">
+                      </colgroup>
+                      <tbody class="ivu-table-tbody">
+                        <tr class="ivu-table-row">
+                          <td class="ivu-table-column-center">
+                            <div class="ivu-table-cell ivu-table-cell-with-selection">
+                              <!----><label class="ivu-checkbox-wrapper ivu-checkbox-default"><span
+                                  class="ivu-checkbox"><span class="ivu-checkbox-inner"></span><input type="checkbox"
+                                    class="ivu-checkbox-input"></span>
+                                <!----></label>
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div>
+                                <div data-v-0ca61d58="" class="hand">
+                                  <div data-v-0ca61d58=""><img data-v-0ca61d58=""
+                                      src="https://static.app2.xin/icon/5e1d84b87a205.png" alt=""></div>
+                                  <div data-v-0ca61d58="" class="sec">
+                                    <div data-v-0ca61d58=""><span data-v-0ca61d58="">盛大棋牌</span>
+                                      <!---->
+                                    </div>
+                                    <p data-v-0ca61d58=""><span data-v-0ca61d58="">iOS</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div>
+                                <div data-v-0ca61d58="" class="hand">1.0</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div>
+                                <div data-v-0ca61d58="" class="hand">0</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!----><a href="https://dongdong.app2.xin" target="blank">https://dongdong.app2.xin</a>
+                              <!---->
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div>
+                                <div data-v-0ca61d58="" class="hand">2020-01-14 17:07:57</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div><span data-v-1cdbef60="" data-v-0ca61d58="" tabindex="0"
+                                  class="s-table-switch-disabled ivu-switch ivu-switch-default"><input
+                                    data-v-1cdbef60="" type="hidden" value="0"><span data-v-1cdbef60=""
+                                    class="ivu-switch-inner">
+                                    <!----></span></span>
+                                <!---->
+                                <!---->
+                                <!---->
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div>
+                                <div data-v-0ca61d58="" style="color: rgb(197, 204, 212);">未使用</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="">
+                            <div class="ivu-table-cell">
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <div><button data-v-278d6aea="" data-v-0ca61d58=""
+                                  class="s-btn s-btn-primary s-btn-stretch">修改</button><button data-v-278d6aea=""
+                                  data-v-0ca61d58="" class="del s-btn s-btn-default s-btn-stretch">删除</button></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!---->
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ivu-table-tip" style="display: none;">
+                    <table cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td style="width: 1107px;"><span>暂无筛选结果</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
                 </div>
+                <!---->
+                <object tabindex="-1" type="text/html" data="about:blank"
+                  style="display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none; padding: 0px; margin: 0px; opacity: 0; z-index: -1000; pointer-events: none;"></object>
               </div>
-              <div data-v-4c978c7a="" class="s-main-content ivu-layout-content">
-                <div data-v-0ca61d58="" data-v-4c978c7a="" class="content ivu-layout">
-                  <div data-v-0ca61d58="" class="header ivu-row">
-                    <h1 data-v-0ca61d58="">账户资料<div data-v-0ca61d58="" class="error-info">余额不足，请尽快充值</div></h1>
-                  </div>
-                  <div data-v-0ca61d58="" class="header mt20 ivu-row">
-                    <div data-v-0ca61d58="" class="ivu-col ivu-col-span-16">
-                      <div data-v-0ca61d58="" class="main-card">
-                        <div data-v-0ca61d58="" slot="title" class="info-head">
-                          <div data-v-0ca61d58="" class="user-info">
-                            <div data-v-0ca61d58="">
-                              <img data-v-0ca61d58="" src="./dist/images/avatar.png" alt="">
-                            </div>
-                            <div data-v-0ca61d58="" class="user-warpper">
-                              <h3 data-v-0ca61d58=""><span data-v-0ca61d58="">17603326303</span><span data-v-0ca61d58="" class="name-right">未实名认证</span></h3>
-                              <div data-v-0ca61d58=""><span data-v-0ca61d58="" class="appstore-iconfont appstore-icongerenban" style="color: rgb(41, 142, 255); margin-right: 4px;"></span><span data-v-0ca61d58="">个人版</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div data-v-0ca61d58="" class="footer">
-                          <div data-v-0ca61d58="" class="today-info-wrap">
-                            <div data-v-0ca61d58="" class="main-footer-item">
-                              <div data-v-0ca61d58="" class="foot-content">
-                                <p data-v-0ca61d58="" class="title">今日PV
-                                  <div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 230px; left: 86px;" x-placement="bottom-start"><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-0ca61d58="" class="tips-table">今日PV：1天（00:00-24:00）之内，每打开一次下载页，记录1个PV，一天内同一用户多次打开同一页面PV计算多次。</div></div></div></div></div></div></div>
-                                </p>
-                                <p data-v-0ca61d58="" class="result">0</p>
-                                <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
-                              </div>
-                            </div>
-                            <div data-v-0ca61d58="" class="main-footer-item">
-                              <div data-v-0ca61d58="" class="foot-content">
-                                <p data-v-0ca61d58="" class="title">今日UV
-                                  <div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 230px; left: 273px;" x-placement="bottom-start"><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-0ca61d58="" class="tips-table">UV值：1天（00:00-24:00）之内，访问下载页的不重复用户数（以浏览器cookie为依据），一天内同一访客多次访问下载页只被计算1次。</div></div></div></div></div></div></div>
-                                </p>
-                                <p data-v-0ca61d58="" class="result">0</p>
-                                <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
-                              </div>
-                            </div>
-                            <div data-v-0ca61d58="" class="main-footer-item">
-                              <div data-v-0ca61d58="" class="foot-content">
-                                <p data-v-0ca61d58="" class="title">今日IP<div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 230px; left: 450px;" x-placement="bottom-start"><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-0ca61d58="" class="tips-table">IP值：1天（00:00-24:00）之内，访问下载页的不重复IP数。一天内相同IP地址多次访问下载页只被计算1次。</div></div></div></div></div></div></div></p>
-                                <p data-v-0ca61d58="" class="result">0</p>
-                                <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
-                              </div>
-                            </div>
-                            <div data-v-0ca61d58="" class="main-footer-item">
-                              <div data-v-0ca61d58="" class="foot-content no-border">
-                                <p data-v-0ca61d58="" class="title">今日下载<div data-v-02012426="" data-v-0ca61d58="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-0ca61d58="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 230px; left: 650px;" x-placement="bottom-start"><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-0ca61d58="" class="tips-table">今日下载：1天（00:00-24:00）之内，每下载一次应用，记录1个下载，一天内同一用户多次下载同一应用，下载数只被记录1次。</div></div></div></div></div></div></div></p>
-                                <p data-v-0ca61d58="" class="result">0</p>
-                                <p data-v-0ca61d58="" class="small">昨日：0<span data-v-0ca61d58="" class="">-</span></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div data-v-0ca61d58="" class="ivu-col ivu-col-span-8">
-                      <div data-v-0ca61d58="" class="container">
-                        <div data-v-0ca61d58="" class="ivu-row">
-                          <div data-v-0ca61d58="" class="ivu-col ivu-col-span-24">
-                            <div data-v-0ca61d58="" class="mini-card ivu-row">
-                              <div data-v-0ca61d58="" class="card-icon ivu-col ivu-col-span-6">
-                                <img data-v-0ca61d58="" src="./dist/images/notes.png" alt="">
-                              </div>
-                              <div data-v-0ca61d58="" class="card-content ivu-col ivu-col-span-18">
-                                <p data-v-0ca61d58="" class="title">基本信息</p>
-                                <p data-v-0ca61d58="" class="content">查看和修改账户的基本资料</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div data-v-0ca61d58="" class="ivu-row">
-                          <div data-v-0ca61d58="" class="ivu-col ivu-col-span-24">
-                            <div data-v-0ca61d58="" class="mini-card ivu-row">
-                              <div data-v-0ca61d58="" class="card-icon ivu-col ivu-col-span-6">
-                                <img data-v-0ca61d58="" src="./dist/images/banknote.png" alt="">
-                              </div>
-                              <div data-v-0ca61d58="" class="card-content ivu-col ivu-col-span-18">
-                                <p data-v-0ca61d58="" class="title">财务信息</p>
-                                <p data-v-0ca61d58="" class="content">查看消费记录和充值记录</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-v-0ca61d58="" class="header ivu-row">
-                    <h1 data-v-0ca61d58="">发布的应用</h1>
-                  </div>
-                  <div data-v-0ca61d58="" class="header mt20 mb40 tab-content ivu-layout-content">
-                    <div data-v-0ca61d58="" class="index-table ivu-table-wrapper">
-                      <div class="ivu-table ivu-table-default"><!---->
-                        <div class="ivu-table-header">
-                          <table cellspacing="0" cellpadding="0" style="width: 1107px;">
-                            <colgroup><col width="62"><col width="130"><col width="130"><col width="130"><col width="130"><col width="131"><col width="131"><col width="131"><col width="131"><!----></colgroup>
-                            <thead>
-                              <tr>
-                                <th class="ivu-table-column-center"><div class="ivu-table-cell ivu-table-cell-with-selection"><label class="ivu-checkbox-wrapper ivu-checkbox-default"><span class="ivu-checkbox"><span class="ivu-checkbox-inner"></span><input type="checkbox" class="ivu-checkbox-input"></span><!----></label></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">应用名称</span><!----><!----></div></th><th class=""><div class="ivu-table-cell"><span class="">版本</span><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><div data-v-02012426="" class="color ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel">总下载量<i class="icon s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(197, 204, 212);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: -133px; left: 341px;" x-placement="top-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div class="tips-table"><p>该应用的历史总下载次数。</p>一个用户下载多次该应用，只记录一次。已下载过您其他应用的用户第一次下载此应用，会记录这次下载，但只计算一次消费。</div></div></div></div></div></div></div><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">下载地址</span><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">创建时间</span><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">上架状态</span><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">下载码</span><!----><!----></div></th>
-                                <th class=""><div class="ivu-table-cell"><span class="">操作</span><!----><!----></div></th><!---->
-                              </tr>
-                            </thead>
-                          </table>
-                        </div>
-                        <div class="ivu-table-body">
-                          <table cellspacing="0" cellpadding="0" style="width: 1107px;">
-                            <colgroup><col width="62"><col width="130"><col width="130"><col width="130"><col width="130"><col width="131"><col width="131"><col width="131"><col width="131"></colgroup>
-                            <tbody class="ivu-table-tbody">
-                              <tr class="ivu-table-row">
-                                <td class="ivu-table-column-center"><div class="ivu-table-cell ivu-table-cell-with-selection"><!----><label class="ivu-checkbox-wrapper ivu-checkbox-default"><span class="ivu-checkbox"><span class="ivu-checkbox-inner"></span><input type="checkbox" class="ivu-checkbox-input"></span><!----></label><!----><!----><!----><!----><!----></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><div data-v-0ca61d58="" class="hand"><div data-v-0ca61d58=""><img data-v-0ca61d58="" src="https://static.app2.xin/icon/5e1d84b87a205.png" alt=""></div><div data-v-0ca61d58="" class="sec"><div data-v-0ca61d58=""><span data-v-0ca61d58="">盛大棋牌</span><!----></div><p data-v-0ca61d58=""><span data-v-0ca61d58="">iOS</span></p></div></div></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><div data-v-0ca61d58="" class="hand">1.0</div></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><div data-v-0ca61d58="" class="hand">0</div></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><a href="https://dongdong.app2.xin" target="blank">https://dongdong.app2.xin</a><!----></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><div data-v-0ca61d58="" class="hand">2020-01-14 17:07:57</div></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><span data-v-1cdbef60="" data-v-0ca61d58="" tabindex="0" class="s-table-switch-disabled ivu-switch ivu-switch-default"><input data-v-1cdbef60="" type="hidden" value="0"><span data-v-1cdbef60="" class="ivu-switch-inner"><!----></span></span><!----><!----><!----></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><div data-v-0ca61d58="" style="color: rgb(197, 204, 212);">未使用</div></div></div></td>
-                                <td class=""><div class="ivu-table-cell"><!----><!----><!----><!----><!----><!----><div><button data-v-278d6aea="" data-v-0ca61d58="" class="s-btn s-btn-primary s-btn-stretch">修改</button><button data-v-278d6aea="" data-v-0ca61d58="" class="del s-btn s-btn-default s-btn-stretch">删除</button></div></div></td>
-                              </tr><!---->
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="ivu-table-tip" style="display: none;">
-                          <table cellspacing="0" cellpadding="0">
-                            <tbody><tr><td style="width: 1107px;"><span>暂无筛选结果</span></td></tr></tbody>
-                          </table>
-                        </div><!----><!----><!----><!---->
-                      </div><!---->
-                      <object tabindex="-1" type="text/html" data="about:blank" style="display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none; padding: 0px; margin: 0px; opacity: 0; z-index: -1000; pointer-events: none;"></object>
-                    </div>
-                    <div data-v-e0e591f0="" data-v-0ca61d58="" show-sizer="" show-elevator="" show-total="" placement="bottom" class="page">
-                      <ul data-v-e0e591f0="" class="ivu-page">
-                        <span class="ivu-page-total">共<em data-v-e0e591f0="" class="total-count">1</em>条数据</span>
-                        <li title="上一页" class="ivu-page-prev ivu-page-disabled"><a><i class="ivu-icon ivu-icon-ios-arrow-back"></i></a></li>
-                        <li title="1" class="ivu-page-item ivu-page-item-active"><a>1</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-                        <li title="下一页" class="ivu-page-next ivu-page-disabled"><a><i class="ivu-icon ivu-icon-ios-arrow-forward"></i></a></li>
-                      </ul>
-                    </div>
-                  </div><!----><!----><!---->
-                </div>
+              <div data-v-e0e591f0="" data-v-0ca61d58="" show-sizer="" show-elevator="" show-total="" placement="bottom"
+                class="page">
+                <ul data-v-e0e591f0="" class="ivu-page">
+                  <span class="ivu-page-total">共<em data-v-e0e591f0="" class="total-count">1</em>条数据</span>
+                  <li title="上一页" class="ivu-page-prev ivu-page-disabled"><a><i
+                        class="ivu-icon ivu-icon-ios-arrow-back"></i></a></li>
+                  <li title="1" class="ivu-page-item ivu-page-item-active"><a>1</a></li>
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                  <li title="下一页" class="ivu-page-next ivu-page-disabled"><a><i
+                        class="ivu-icon ivu-icon-ios-arrow-forward"></i></a></li>
+                </ul>
               </div>
-            </div><!----><!---->
+            </div>
+            <!---->
+            <!---->
+            <!---->
           </div>
         </div>
-        <script src="./dist/js/jquery.min.js"></script>
-        <script src="./dist/js/app.js"></script>
+      </div>
+      <!---->
+      <!---->
+    </div>
+  </div>
+  <script src="./dist/js/jquery.min.js"></script>
+  <script src="./dist/js/webuploader.js"></script>
+  <script src="./dist/js/app.js"></script>
 
-        <div id="postAppStep0" data-v-5c2ab2a8="" data-transfer="true" class="v-transfer-dom">
-          <div class="ivu-modal-mask" style="z-index: 1013; display: none;"></div>
-          <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1013;">
-            <div class="ivu-modal" style="width: 750px; top: 0px; display: none;">
-              <div class="ivu-modal-content">
-                <a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
-                <div class="ivu-modal-body">
-                  <div data-v-5c2ab2a8="" class="info-item">
-                    <h3 data-v-5c2ab2a8="">服务使用条款</h3>
-                    <p data-v-5c2ab2a8="">请在使用iOS 超级签名服务前，仔细阅读并充分理解以下内容及条款：</p>
-                    <ul data-v-5c2ab2a8="">
-                      <li data-v-5c2ab2a8="" class="font-bold">
-                        <p data-v-5c2ab2a8="">您知晓并同意，由我们提供软件签名的技术，您购买此服务是用于您的 App 的内部测试之用途，且需符合苹果iOS 超级签名的所有规定，否则，因此而产生的法律后果由您自行全部承担；</p>
-                      </li>
-                      <li data-v-5c2ab2a8="" class="font-bold">
-                        <p data-v-5c2ab2a8="">您知晓并同意，苹果iOS 超级签名因受到苹果政策影响，在未来可能会存在被苹果撤销从而导致应用出现无法安装、或已经安装的应用无法打开等情况，您同意并愿意独立承担该风险以及该风险导致的后续一切损失，并接受我们在后续可能为此而做出任何补偿等措施；</p>
-                      </li>
-                      <li data-v-5c2ab2a8="" class="font-bold">
-                        <p data-v-5c2ab2a8="">您知晓并同意，我们提供签名技术来供您下载您的应用，因您对外分发导致App被滥用、恶意下载、刷量而造成的损失，我们仅提供必要的数据支持和反作弊服务，您同意并愿意独立承担因对外分发和推广而导致的风险和风险后续的一切损失。</p>
-                      </li>
-                    </ul>
-                    <p data-v-5c2ab2a8="">您已仔细阅读并同意《超级签名服务协议》中的全部内容。</p>
-                    <p data-v-5c2ab2a8="">点击“我同意”代表您已仔细阅读并同意以上所有内容。</p>
-                  </div>
-                  <div data-v-5c2ab2a8="" class="add-app-item tar">
-                    <button data-v-278d6aea="" data-v-5c2ab2a8="" class="mr10 s-btn s-btn-default">不同意</button>
-                    <button data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary">我同意</button>
-                  </div>
-                </div>
-              </div>
+  <div id="postAppStep0" data-v-5c2ab2a8="" data-transfer="true" class="v-transfer-dom">
+    <div class="ivu-modal-mask" style="z-index: 1013; display: none;"></div>
+    <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1013;">
+      <div class="ivu-modal" style="width: 750px; top: 0px; display: none;">
+        <div class="ivu-modal-content">
+          <a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
+          <div class="ivu-modal-body">
+            <div data-v-5c2ab2a8="" class="info-item">
+              <h3 data-v-5c2ab2a8="">服务使用条款</h3>
+              <p data-v-5c2ab2a8="">请在使用iOS 超级签名服务前，仔细阅读并充分理解以下内容及条款：</p>
+              <ul data-v-5c2ab2a8="">
+                <li data-v-5c2ab2a8="" class="font-bold">
+                  <p data-v-5c2ab2a8="">您知晓并同意，由我们提供软件签名的技术，您购买此服务是用于您的 App 的内部测试之用途，且需符合苹果iOS
+                    超级签名的所有规定，否则，因此而产生的法律后果由您自行全部承担；</p>
+                </li>
+                <li data-v-5c2ab2a8="" class="font-bold">
+                  <p data-v-5c2ab2a8="">您知晓并同意，苹果iOS
+                    超级签名因受到苹果政策影响，在未来可能会存在被苹果撤销从而导致应用出现无法安装、或已经安装的应用无法打开等情况，您同意并愿意独立承担该风险以及该风险导致的后续一切损失，并接受我们在后续可能为此而做出任何补偿等措施；
+                  </p>
+                </li>
+                <li data-v-5c2ab2a8="" class="font-bold">
+                  <p data-v-5c2ab2a8="">
+                    您知晓并同意，我们提供签名技术来供您下载您的应用，因您对外分发导致App被滥用、恶意下载、刷量而造成的损失，我们仅提供必要的数据支持和反作弊服务，您同意并愿意独立承担因对外分发和推广而导致的风险和风险后续的一切损失。
+                  </p>
+                </li>
+              </ul>
+              <p data-v-5c2ab2a8="">您已仔细阅读并同意《超级签名服务协议》中的全部内容。</p>
+              <p data-v-5c2ab2a8="">点击“我同意”代表您已仔细阅读并同意以上所有内容。</p>
+            </div>
+            <div data-v-5c2ab2a8="" class="add-app-item tar">
+              <button data-v-278d6aea="" data-v-5c2ab2a8="" class="mr10 s-btn s-btn-default">不同意</button>
+              <button data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary">我同意</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div id="postAppStep1" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
-          <div class="ivu-modal-mask" style="z-index: 1011; display: none;"></div>
-          <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1011;">
-            <div class="ivu-modal" style="width: 840px; top: 20px; display: none;">
-              <div class="ivu-modal-content">
-                <a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
-                <div class="ivu-modal-header">
-                  <div class="ivu-modal-header-inner">新增应用</div>
+  <div id="postAppStep1" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
+    <div class="ivu-modal-mask" style="z-index: 1011; display: none;"></div>
+    <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1011;">
+      <div class="ivu-modal" style="width: 840px; top: 20px; display: none;">
+        <div class="ivu-modal-content">
+          <a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
+          <div class="ivu-modal-header">
+            <div class="ivu-modal-header-inner">新增应用</div>
+          </div>
+          <div class="ivu-modal-body">
+            <div data-v-5834ce9c="" class="scroll-layer">
+              <div data-v-5834ce9c="" class="add-app">
+                <div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal">
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process"
+                    style="width: 33.3333%; color: red;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>1</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">上传应用</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail">
+                      <i></i>
+                    </div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>2</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">解析</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>3</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">填写信息</div>
+                      <!---->
+                    </div>
+                  </div>
                 </div>
-                <div class="ivu-modal-body">
-                  <div data-v-5834ce9c="" class="scroll-layer">
-                    <div data-v-5834ce9c="" class="add-app">
-                      <div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal">
-                        <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process" style="width: 33.3333%; color: red;">
-                          <div class="ivu-steps-tail"><i></i></div>
-                          <div class="ivu-steps-head">
-                            <div class="ivu-steps-head-inner"><span>1</span></div>
+              </div>
+              <div data-v-5834ce9c="">
+                <div data-v-5834ce9c="" class="add-app-item-info">
+                  <dl data-v-5834ce9c="">
+                    <dd data-v-5834ce9c="">上传ipa提示：</dd>
+                    <!---->
+                    <dd data-v-5834ce9c="" class="point">ipa包里必须要有embedded.mobileprovision，确保权限完整；</dd>
+                    <dd data-v-5834ce9c="" class="point">ipa包里确保info.plist里的bundleid与二进制执行文件中的bundleid一致；</dd>
+                    <dd data-v-5834ce9c="" class="point">ipa包最好是没有被其他机构重签过的包，不然可能会导致应用闪退；</dd>
+                    <dd data-v-5834ce9c="" class="point">ipa包包含有第三方服务且服务与bundleid有关联的，请选择证书推送（如第三方登录和地图等）；</dd>
+                  </dl>
+                </div>
+                <div data-v-5834ce9c="" class="add-app-item add-btn">
+                  <div data-v-5834ce9c="" id="sideMenuUploadApp" class="btn-upload-picker webuploader-container">
+                    <div class="webuploader-pick">
+                      <div class="">
+                        <div class="">
+                          <div class="">
+                            <div class="">
+                              <div class="">
+                                <div class="">
+                                  <div class="">
+                                    <div class="">立即上传</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="ivu-steps-main">
-                            <div class="ivu-steps-title">上传应用</div><!---->
-                          </div>
-                        </div>
-                        <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
-                          <div class="ivu-steps-tail">
-                            <i></i>
-                          </div>
-                          <div class="ivu-steps-head">
-                            <div class="ivu-steps-head-inner"><span>2</span></div>
-                          </div>
-                          <div class="ivu-steps-main">
-                            <div class="ivu-steps-title">解析</div><!---->
-                          </div>
-                        </div>
-                        <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
-                          <div class="ivu-steps-tail"><i></i></div>
-                          <div class="ivu-steps-head">
-                            <div class="ivu-steps-head-inner"><span>3</span></div>
-                          </div>
-                          <div class="ivu-steps-main"><div class="ivu-steps-title">填写信息</div><!----></div>
                         </div>
                       </div>
                     </div>
-                    <div data-v-5834ce9c="">
-                      <div data-v-5834ce9c="" class="add-app-item-info">
-                        <dl data-v-5834ce9c="">
-                          <dd data-v-5834ce9c="">上传ipa提示：</dd><!---->
-                          <dd data-v-5834ce9c="" class="point">ipa包里必须要有embedded.mobileprovision，确保权限完整；</dd>
-                          <dd data-v-5834ce9c="" class="point">ipa包里确保info.plist里的bundleid与二进制执行文件中的bundleid一致；</dd>
-                          <dd data-v-5834ce9c="" class="point">ipa包最好是没有被其他机构重签过的包，不然可能会导致应用闪退；</dd>
-                          <dd data-v-5834ce9c="" class="point">ipa包包含有第三方服务且服务与bundleid有关联的，请选择证书推送（如第三方登录和地图等）；</dd>
-                        </dl>
-                      </div>
-                      <div data-v-5834ce9c="" class="add-app-item add-btn">
-                        <div data-v-5834ce9c="" id="sideMenuUploadApp" class="btn-upload-picker webuploader-container"><div class="webuploader-pick"><div class=""><div class=""><div class=""><div class=""><div class=""><div class=""><div class=""><div class="">立即上传</div></div></div></div></div></div></div></div></div><div id="rt_rt_1e0l6asirvdjrd8vll1k0ce5tp" style="position: absolute; top: 0px; left: 304.006px; width: 200px; height: 50px; overflow: hidden; bottom: auto; right: auto;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
-                      </div>
-                      <div data-v-5834ce9c="" class="add-app-item add-p">
-                        <p data-v-5834ce9c="">点击按钮选择应用的安装包</p>
-                        <p data-v-5834ce9c="">(支持IPA文件，单个文件最大支持2GB，支持中断后续传)</p>
-                      </div>
-                    </div><!----><!----><!----><!---->
-                  </div><!---->
-                </div><!---->
+                    <div id="rt_rt_1e0l6asirvdjrd8vll1k0ce5tp"
+                      style="position: absolute; top: 0px; left: 304.006px; width: 200px; height: 50px; overflow: hidden; bottom: auto; right: auto;">
+                      <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple"><label
+                        style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-5834ce9c="" class="add-app-item add-p">
+                  <p data-v-5834ce9c="">点击按钮选择应用的安装包</p>
+                  <p data-v-5834ce9c="">(支持IPA文件，单个文件最大支持2GB，支持中断后续传)</p>
+                </div>
               </div>
+              <!---->
+              <!---->
+              <!---->
+              <!---->
             </div>
+            <!---->
           </div>
+          <!---->
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div id="postAppStep2" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
-          <div class="ivu-modal-mask" style="z-index: 1014; display: none;"></div>
-          <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1014;">
-            <div class="ivu-modal" style="width: 840px; top: 20px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a><div class="ivu-modal-header"><div class="ivu-modal-header-inner">新增应用</div></div><div class="ivu-modal-body"><div data-v-5834ce9c="" class="scroll-layer"><div data-v-5834ce9c="" class="add-app"><div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal"><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process" style="width: 33.3333%; color: red;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span>1</span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">上传应用</div><!----></div></div><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span>2</span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">解析</div><!----></div></div><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span>3</span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">填写信息</div><!----></div></div></div></div><div data-v-5834ce9c="" class="add-app-item app-size"><p data-v-5834ce9c="">应用正在上传中，请不要关闭页面</p></div><div data-v-5834ce9c="" class="add-app-item add-loading"><div data-v-5834ce9c="" class="progress-bar ivu-progress ivu-progress-active"><div class="ivu-progress-outer"><div class="ivu-progress-inner"><div class="ivu-progress-bg" style="width: 85.5839%; height: 10px;"><!----></div><div class="ivu-progress-success-bg" style="width: 0%; height: 10px;"></div></div></div><!----></div></div><div data-v-5834ce9c="" class="add-app-item app-size"><p data-v-5834ce9c="">86%
-          39.1M/45.7M
-        </p></div><div data-v-5834ce9c="" class="add-app-item app-pause"><button data-v-278d6aea="" data-v-5834ce9c="" class="s-btn s-btn-primary s-btn-ghost">继续上传</button><button data-v-278d6aea="" data-v-5834ce9c="" class="s-btn s-btn-primary s-btn-ghost" style="margin-left: 16px;">取消上传
-        </button></div><!----><!----><!----><!----></div><!----></div><!----></div></div></div></div>
+  <div id="postAppStep2" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
+    <div class="ivu-modal-mask" style="z-index: 1014; display: none;"></div>
+    <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1014;">
+      <div class="ivu-modal" style="width: 840px; top: 20px; display: none;">
+        <div class="ivu-modal-content">
+          <a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
+          <div class="ivu-modal-header">
+            <div class="ivu-modal-header-inner">新增应用</div>
+          </div>
+          <div class="ivu-modal-body">
+            <div data-v-5834ce9c="" class="scroll-layer">
+              <div data-v-5834ce9c="" class="add-app">
+                <div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal">
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process"
+                    style="width: 33.3333%; color: red;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>1</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">上传应用</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>2</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">解析</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-wait" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>3</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">填写信息</div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-5834ce9c="" class="add-app-item app-size">
+                <p data-v-5834ce9c="">应用正在上传中，请不要关闭页面</p>
+              </div>
+              <div data-v-5834ce9c="" class="add-app-item add-loading">
+                <div data-v-5834ce9c="" class="progress-bar ivu-progress ivu-progress-active">
+                  <div class="ivu-progress-outer">
+                    <div class="ivu-progress-inner">
+                      <div class="ivu-progress-bg" style="width: 0%; height: 10px;">
+                        <!---->
+                      </div>
+                      <div class="ivu-progress-success-bg" style="width: 0%; height: 10px;"></div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div data-v-5834ce9c="" class="add-app-item app-size">
+                <p data-v-5834ce9c=""></p>
+              </div>
+              <div data-v-5834ce9c="" class="add-app-item app-pause"><button data-v-278d6aea="" data-v-5834ce9c=""
+                  class="s-btn s-btn-primary s-btn-ghost">继续上传</button><button data-v-278d6aea="" data-v-5834ce9c=""
+                  class="s-btn s-btn-primary s-btn-ghost" style="margin-left: 16px;">取消上传
+                </button></div>
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div id="postAppStep3" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
-          <div class="ivu-modal-mask" style="z-index: 1014; display: none;"></div>
-          <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1014;">
-            <div class="ivu-modal" style="width: 840px; top: 20px; display: none;">
-              <div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a><div class="ivu-modal-header"><div class="ivu-modal-header-inner">新增应用</div></div><div class="ivu-modal-body"><div data-v-5834ce9c="" class="scroll-layer"><div data-v-5834ce9c="" class="add-app"><div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal"><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-finish" style="width: 33.3333%; color: red;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span class="ivu-steps-icon ivu-icon ivu-icon-ios-checkmark"></span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">上传应用</div><!----></div></div><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-finish" style="width: 33.3333%;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span class="ivu-steps-icon ivu-icon ivu-icon-ios-checkmark"></span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">解析</div><!----></div></div><div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process" style="width: 33.3333%;"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner"><span>3</span></div></div><div class="ivu-steps-main"><div class="ivu-steps-title">填写信息</div><!----></div></div></div></div><!----><div data-v-5834ce9c="" class="app-info" style="margin-top: 10px; margin-left: 272px;"><div data-v-5834ce9c="" class="app-info__left"><img data-v-5834ce9c="" src="https://static.app2.xin/icon/5e401db90bf60.png" alt="" class="app-info__img"></div><div data-v-5834ce9c="" class="app-info__right"><p data-v-5834ce9c="" class="app-info__title">开心棋牌</p><p data-v-5834ce9c="" class="app-info__text">版本：4.36</p><p data-v-5834ce9c="" class="app-info__text">大小：45.7M</p></div></div><form data-v-5834ce9c="" autocomplete="off" class="ivu-form ivu-form-label-right"><!----><div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">主页地址
-            <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 487px; left: 281px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                您应用的下载地址，用户通过该链接下载您的应用
-              </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type" style="width: 50%;"><!----><!----><i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i><input autocomplete="off" spellcheck="false" type="text" placeholder="自定义主页地址" class="ivu-input ivu-input-default"><!----></div>
-          .app2.xin
-        <!----></div></div><div data-v-5834ce9c="" class="ivu-form-item"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">下载完后显示
-            <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 487px; left: 291px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                如需下载后唤醒打开应用，请先在ipa包内info.plist里的CFBundleURLSchemes添加配置项
-              </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_0" class="ivu-radio-group ivu-radio-group-default ivu-radio-default"><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_0"></span>直接唤醒打开</label><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_0"></span>在桌面打开</label></div><!----></div></div><div data-v-5834ce9c="" class="safa-tips-red ivu-form-item"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">超级保护
-          </div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_1" class="ivu-radio-group ivu-radio-group-default ivu-radio-default"><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_1"></span>安装</label><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_1"></span>不安装</label></div><!----><!----></div></div><div data-v-5834ce9c="" class="ivu-form-item"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">显示安装视频教程
-          </div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_2" class="ck-wrap ivu-radio-group ivu-radio-group-default ivu-radio-default"><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_2"></span>显示</label><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_2"></span>不显示</label></div><!----></div></div><div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">消息推送
-            <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 487px; left: 281px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                消息推送可提高用户活跃度及应用留存率，但会影响第三方(微信、QQ等)登录。
-              </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_3" class="ivu-radio-group ivu-radio-group-default ivu-radio-default ivu-radio-group-vertical"><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default" style="display: none;"><span class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_3"></span>不推送&nbsp;&nbsp;&nbsp;（消息推送可提高用户活跃度及应用留存率）</label><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_3"></span>直接推送（可能会影响微信、QQ等第三方的登录）</label><label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio" class="ivu-radio-input" name="ivuRadioGroup_1581259532725_3"></span>证书推送（请在推送时配置p12证书文件）</label></div><div data-v-5834ce9c="" class="error-info">请谨慎选择！
-            <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 210px; left: 75px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                已上传的应用再修改消息提醒方式，可能会导致已安装用户无法正常使用。需要重新上传应用包，选择消息推送后让用户重新下载
-              </div></div></div></div></div></div></div></div><!----></div></div><div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">应用类别
-              <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 487px; left: 281px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                  您想要展示给用户的应用类别
-                </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-c332ea4c="" data-v-5834ce9c="" class="flex-scroll app-list mr10 flr"><i data-v-c332ea4c="" class="search s-icon s-icon-search" style="font-size: 15px; color: rgb(235, 237, 242);"></i><div data-v-c332ea4c="" class="ivu-select ivu-select-single ivu-select-default"><div tabindex="-1" class="ivu-select-selection"><input type="hidden"><div class=""><!----><!----><span class="" style="display: none;"></span><input type="text" placeholder="选择类别" autocomplete="off" spellcheck="false" class="ivu-select-input"><!----><i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i></div></div><div class="ivu-select-dropdown" style="display: none; min-width: 270px; position: absolute; will-change: top, left; transform-origin: center top; top: 108px; left: 0px;" x-placement="bottom-start" x-out-of-boundaries=""><ul class="ivu-select-not-found" style="display: none;"><li>无匹配数据</li></ul><ul class="ivu-select-dropdown-list"><li data-v-c332ea4c="" class="ivu-select-item">报刊杂志</li><li data-v-c332ea4c="" class="ivu-select-item">财务</li><li data-v-c332ea4c="" class="ivu-select-item">参考</li><li data-v-c332ea4c="" class="ivu-select-item">导航</li><li data-v-c332ea4c="" class="ivu-select-item">儿童</li><li data-v-c332ea4c="" class="ivu-select-item">工具</li><li data-v-c332ea4c="" class="ivu-select-item">购物</li><li data-v-c332ea4c="" class="ivu-select-item">健康健美</li><li data-v-c332ea4c="" class="ivu-select-item">教育</li><li data-v-c332ea4c="" class="ivu-select-item">旅游</li><li data-v-c332ea4c="" class="ivu-select-item">美食佳饮</li><li data-v-c332ea4c="" class="ivu-select-item">商务</li><li data-v-c332ea4c="" class="ivu-select-item">社交</li><li data-v-c332ea4c="" class="ivu-select-item">摄影与录像</li><li data-v-c332ea4c="" class="ivu-select-item">生活</li><li data-v-c332ea4c="" class="ivu-select-item">体育</li><li data-v-c332ea4c="" class="ivu-select-item">天气</li><li data-v-c332ea4c="" class="ivu-select-item">图书</li><li data-v-c332ea4c="" class="ivu-select-item">效率</li><li data-v-c332ea4c="" class="ivu-select-item">新闻</li><li data-v-c332ea4c="" class="ivu-select-item">医疗</li><li data-v-c332ea4c="" class="ivu-select-item">音乐</li><li data-v-c332ea4c="" class="ivu-select-item">娱乐</li><li data-v-c332ea4c="" class="ivu-select-item">策略游戏</li><li data-v-c332ea4c="" class="ivu-select-item">动作游戏</li><li data-v-c332ea4c="" class="ivu-select-item">儿童游戏</li><li data-v-c332ea4c="" class="ivu-select-item">角色扮演</li><li data-v-c332ea4c="" class="ivu-select-item">竞速游戏</li><li data-v-c332ea4c="" class="ivu-select-item">聚会游戏</li><li data-v-c332ea4c="" class="ivu-select-item">卡牌游戏</li><li data-v-c332ea4c="" class="ivu-select-item">冒险游戏</li><li data-v-c332ea4c="" class="ivu-select-item">模拟游戏</li><li data-v-c332ea4c="" class="ivu-select-item">日月游戏</li><li data-v-c332ea4c="" class="ivu-select-item">文字游戏</li><li data-v-c332ea4c="" class="ivu-select-item">问答游戏</li><li data-v-c332ea4c="" class="ivu-select-item">休闲游戏</li><li data-v-c332ea4c="" class="ivu-select-item">益智解谜</li><li data-v-c332ea4c="" class="ivu-select-item">音乐游戏</li><li data-v-c332ea4c="" class="ivu-select-item">棋牌游戏</li><li data-v-c332ea4c="" class="ivu-select-item">桌面游戏</li></ul><ul class="ivu-select-loading" style="display: none;">加载中</ul></div></div></div><!----></div></div><!----><div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">评分数显示
-              <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 487px; left: 281px;" x-placement="bottom-start" x-out-of-boundaries=""><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                  您想要展示给用户的评分数量，没有具体评价内容且分数固定为4.9分，您只需填写一个看似真实的评价数展示给用户，表现您的应用已有如此多的下载量。
-                </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" class="ivu-input-number ivu-input-number-default"><div class="ivu-input-number-handler-wrap"><a class="ivu-input-number-handler ivu-input-number-handler-up"><span class="ivu-input-number-handler-up-inner ivu-icon ivu-icon-ios-arrow-up"></span></a><a class="ivu-input-number-handler ivu-input-number-handler-down ivu-input-number-handler-down-disabled"><span class="ivu-input-number-handler-down-inner ivu-icon ivu-icon-ios-arrow-down"></span></a></div><div class="ivu-input-number-input-wrap"><input autocomplete="off" spellcheck="false" placeholder="" class="ivu-input-number-input"></div></div><!----></div></div><div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required"><label class="ivu-form-item-label" style="width: 130px;"><div data-v-5834ce9c="" class="slot-label">应用介绍
-              <div data-v-02012426="" data-v-5834ce9c="" class="ivu-poptip"><div data-v-02012426="" class="ivu-poptip-rel"><i data-v-5834ce9c="" class="tips s-icon s-icon-explain" data-v-02012426="" style="font-size: 16px; color: rgb(204, 204, 204);"></i></div><div data-v-02012426="" class="ivu-poptip-popper" style="display: none; position: absolute; will-change: top, left; top: 503px; left: 281px;" x-placement="bottom-start"><div data-v-02012426="" class="ivu-poptip-content"><div data-v-02012426="" class="ivu-poptip-arrow"></div><!----><div data-v-02012426="" class="ivu-poptip-inner"><!----><div data-v-02012426="" class="ivu-poptip-body"><div data-v-02012426="" class="ivu-poptip-body-content"><div data-v-5834ce9c="" class="tips-table">
-                  您想要展示给用户对此应用的详细介绍
-                </div></div></div></div></div></div></div></div></label><div class="ivu-form-item-content" style="margin-left: 130px;"><div data-v-5834ce9c="" class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type"><textarea wrap="soft" autocomplete="off" spellcheck="false" placeholder="应用详细介绍，500字以内" rows="6" maxlength="500" class="ivu-input"></textarea></div><!----></div></div><!----><div data-v-5834ce9c="" class="ivu-form-item"><label class="ivu-form-item-label" style="width: 130px;">详情图</label><div class="ivu-form-item-content" style="margin-left: 130px;"><!----><div data-v-5834ce9c="" class="ivu-upload"><div class="ivu-upload ivu-upload-select"><input type="file" multiple="multiple" class="ivu-upload-input"><button data-v-278d6aea="" data-v-5834ce9c="" class="w100 s-btn s-btn-primary s-btn-stretch">
-              上传0/5</button></div><!----></div><p data-v-5834ce9c="">请上传尺寸为1920*1080、1080*1920、2208*1242、1242*2208的图片,不同尺寸的图片无法同时上传</p><!----><!----></div></div><div data-v-5834ce9c="" class="ivu-form-item"><label class="ivu-form-item-label" style="width: 130px;">下载单价</label><div class="ivu-form-item-content" style="margin-left: 130px;"><!----><span data-v-5834ce9c="">21</span><!----></div></div><!----><div data-v-5834ce9c="" class="ivu-form-item"><!----><div class="ivu-form-item-content" style="margin-left: 130px;"><button data-v-278d6aea="" data-v-5834ce9c="" class="s-btn s-btn-primary s-btn-ghost">发布应用</button><!----></div></div></form><!----><!----><!----></div><!----></div><!----></div></div></div></div>
+  <div id="postAppStep3" data-v-5834ce9c="" data-v-5c2ab2a8="" data-transfer="true" class="z-modal v-transfer-dom">
+    <div class="ivu-modal-mask" style="z-index: 1014; display: none;"></div>
+    <div class="ivu-modal-wrap ivu-modal-hidden" style="z-index: 1014;">
+      <div class="ivu-modal" style="width: 840px; top: 20px; display: none;">
+        <div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close"></i></a>
+          <div class="ivu-modal-header">
+            <div class="ivu-modal-header-inner">新增应用</div>
+          </div>
+          <div class="ivu-modal-body">
+            <div data-v-5834ce9c="" class="scroll-layer">
+              <div data-v-5834ce9c="" class="add-app">
+                <div data-v-5834ce9c="" class="ivu-steps ivu-steps-horizontal">
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-finish"
+                    style="width: 33.3333%; color: red;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span
+                          class="ivu-steps-icon ivu-icon ivu-icon-ios-checkmark"></span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">上传应用</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-finish" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span
+                          class="ivu-steps-icon ivu-icon ivu-icon-ios-checkmark"></span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">解析</div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div data-v-5834ce9c="" class="ivu-steps-item ivu-steps-status-process" style="width: 33.3333%;">
+                    <div class="ivu-steps-tail"><i></i></div>
+                    <div class="ivu-steps-head">
+                      <div class="ivu-steps-head-inner"><span>3</span></div>
+                    </div>
+                    <div class="ivu-steps-main">
+                      <div class="ivu-steps-title">填写信息</div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div data-v-5834ce9c="" class="app-info" style="margin-top: 10px; margin-left: 272px;">
+                <div data-v-5834ce9c="" class="app-info__left"><img data-v-5834ce9c=""
+                    src="https://static.app2.xin/icon/5e401db90bf60.png" alt="" class="app-info__img"></div>
+                <div data-v-5834ce9c="" class="app-info__right">
+                  <p data-v-5834ce9c="" class="app-info__title">开心棋牌</p>
+                  <p data-v-5834ce9c="" class="app-info__text">版本：4.36</p>
+                  <p data-v-5834ce9c="" class="app-info__text">大小：45.7M</p>
+                </div>
+              </div>
+              <form data-v-5834ce9c="" autocomplete="off" class="ivu-form ivu-form-label-right">
+                <div data-v-5834ce9c="" class="ivu-form-item">
+                  <label class="ivu-form-item-label" style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">适用下载渠道
+                    </div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_0" class="ivu-radio-group ivu-radio-group-default ivu-radio-default">
+                      <label data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default">
+                        <span class="ivu-radio ivu-radio-checked">
+                          <span class="ivu-radio-inner"></span>
+                          <input type="radio" value="1" class="ivu-radio-input" name="channel">
+                        </span>
+                        公有
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-5834ce9c="" class="ivu-form-item">
+                  <label class="ivu-form-item-label" style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">提取方式
+                    </div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_2"
+                      class="ck-wrap ivu-radio-group ivu-radio-group-default ivu-radio-default"><label
+                        data-v-5834ce9c=""
+                        class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span
+                          class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio"
+                            class="ivu-radio-input" name="shareMethod" value="1"></span>公开</label><label
+                        data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span
+                          class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio"
+                            class="ivu-radio-input" name="shareMethod" value="4"></span>授权码</label></div>
+                  </div>
+                </div>
+                <div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required">
+                  <label class="ivu-form-item-label"
+                    style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">应用类别
+                    </div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-c332ea4c="" data-v-5834ce9c="" class="flex-scroll app-list mr10 flr"><i
+                        data-v-c332ea4c="" class="search s-icon s-icon-search"
+                        style="font-size: 15px; color: rgb(235, 237, 242);"></i>
+                      <div data-v-c332ea4c="" class="ivu-select ivu-select-single ivu-select-default">
+                        <div tabindex="-1" class="ivu-select-selection"><input type="hidden">
+                          <div class="">
+                            <!---->
+                            <!----><span class="" style="display: none;"></span><input type="text" placeholder="选择类别"
+                              autocomplete="off" spellcheck="false" class="ivu-select-input">
+                            <!----><i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i></div>
+                        </div>
+                        <div class="ivu-select-dropdown"
+                          style="display: none; min-width: 270px; position: absolute; will-change: top, left; transform-origin: center top; top: 108px; left: 0px;"
+                          x-placement="bottom-start" x-out-of-boundaries="">
+                          <ul class="ivu-select-not-found" style="display: none;">
+                            <li>无匹配数据</li>
+                          </ul>
+                          <ul class="ivu-select-dropdown-list">
+                            <li data-v-c332ea4c="" class="ivu-select-item">报刊杂志</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">财务</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">参考</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">导航</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">儿童</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">工具</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">购物</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">健康健美</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">教育</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">旅游</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">美食佳饮</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">商务</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">社交</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">摄影与录像</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">生活</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">体育</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">天气</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">图书</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">效率</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">新闻</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">医疗</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">音乐</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">娱乐</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">策略游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">动作游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">儿童游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">角色扮演</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">竞速游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">聚会游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">卡牌游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">冒险游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">模拟游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">日月游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">文字游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">问答游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">休闲游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">益智解谜</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">音乐游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">棋牌游戏</li>
+                            <li data-v-c332ea4c="" class="ivu-select-item">桌面游戏</li>
+                          </ul>
+                          <ul class="ivu-select-loading" style="display: none;">加载中</ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
+                </div>
+                <!---->
+                <div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required">
+                  <label class="ivu-form-item-label" style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">描述</div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-5834ce9c="" class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                      <textarea wrap="soft" autocomplete="off" spellcheck="false" placeholder="应用详细介绍，500字以内" rows="6"maxlength="500" class="ivu-input"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-5834ce9c="" class="ivu-form-item ivu-form-item-required">
+                  <label class="ivu-form-item-label" style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">备注</div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-5834ce9c="" class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                      <textarea wrap="soft" autocomplete="off" spellcheck="false" placeholder="应用详细介绍，500字以内" rows="6"maxlength="500" class="ivu-input"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+                <div data-v-5834ce9c="" class="ivu-form-item">
+                  <label class="ivu-form-item-label" style="width: 130px;">
+                    <div data-v-5834ce9c="" class="slot-label">自动安装
+                    </div>
+                  </label>
+                  <div class="ivu-form-item-content" style="margin-left: 130px;">
+                    <div data-v-5834ce9c="" name="ivuRadioGroup_1581259532725_2"
+                      class="ck-wrap ivu-radio-group ivu-radio-group-default ivu-radio-default"><label
+                        data-v-5834ce9c=""
+                        class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default"><span
+                          class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span><input type="radio"
+                            class="ivu-radio-input" name="autoInstall" value="yes"></span>打开</label><label
+                        data-v-5834ce9c="" class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-default"><span
+                          class="ivu-radio"><span class="ivu-radio-inner"></span><input type="radio"
+                            class="ivu-radio-input" name="autoInstall" value="no"></span>关闭</label>（下载页面是否自动安装，默认关闭）</div>
+                  </div>
+                </div>
+                <div data-v-5834ce9c="" class="ivu-form-item">
+                  <!---->
+                  <div class="ivu-form-item-content" style="margin-left: 130px;"><button data-v-278d6aea=""
+                      data-v-5834ce9c="" class="s-btn s-btn-primary s-btn-ghost">发布应用</button>
+                    <!---->
+                  </div>
+                </div>
+              </form>
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </body>
+</body>
+
 </html>

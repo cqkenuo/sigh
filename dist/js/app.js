@@ -10,12 +10,6 @@ $(document).ready(function() {
         window.location.href = "./settings.html";
     })
 
-    // dashbaord.html
-
-    $('.mini-card').on("click", function() {
-        window.location.href = "./settings.html";
-    })
-
     $('.ivu-modal-close').on("click", function() {
         $('.ivu-modal-mask').hide();
         $('.ivu-modal-wrap').addClass("ivu-modal-hidden");
@@ -46,17 +40,34 @@ $(document).ready(function() {
         $('#postAppStep1 .ivu-modal-mask').show();
         $('#postAppStep1 .ivu-modal-wrap').removeClass("ivu-modal-hidden");
         $('#postAppStep1 .ivu-modal').show();
+
+        var uploader = WebUploader.create({
+
+            auto: true,
+
+            server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+            pick: '#sideMenuUploadApp'
+        });
+
+        uploader.on( 'uploadProgress', function( file, percentage ) {
+            $('.ivu-modal-mask').hide();
+            $('.ivu-modal-wrap').addClass("ivu-modal-hidden");
+            $('.ivu-modal').hide();
+
+            $('#postAppStep2 .ivu-modal-mask').show();
+            $('#postAppStep2 .ivu-modal-wrap').removeClass("ivu-modal-hidden");
+            $('#postAppStep2 .ivu-modal').show();
+
+            setInterval(function(){
+                let fileSize = Math.round(file.size / 1024 / 1024 * 10) / 10;
+                let uploadedSize = Math.round(fileSize * percentage / 100 * 10) / 10;
+
+                $('.ivu-progress-bg').css("width", percentage + "%");
+                $('.add-app-item.app-size > p:eq(1)').html(percentage + "% " + uploadedSize + "M/" + fileSize + "M");
+            }, 500);
+        });
     });
-
-    $('#sideMenuUploadApp').on("click", function() {
-        $('.ivu-modal-mask').hide();
-        $('.ivu-modal-wrap').addClass("ivu-modal-hidden");
-        $('.ivu-modal').hide();
-
-        $('#postAppStep2 .ivu-modal-mask').show();
-        $('#postAppStep2 .ivu-modal-wrap').removeClass("ivu-modal-hidden");
-        $('#postAppStep2 .ivu-modal').show();
-    })
 
     $('#postAppStep2 .s-btn-primary').on("click", function() {
         $('.ivu-modal-mask').hide();
@@ -67,6 +78,12 @@ $(document).ready(function() {
         $('#postAppStep3 .ivu-modal-wrap').removeClass("ivu-modal-hidden");
         $('#postAppStep3 .ivu-modal').show();
     });
+
+    // dashbaord.html
+
+    $('.mini-card').on("click", function() {
+        window.location.href = "./settings.html";
+    })
 
     // settings.html
     $(".setting-item:eq(0)").on("click", function() {
