@@ -1,8 +1,19 @@
 $(document).ready(function() {
+    
     $('.ivu-dropdown').hover(function() {
         $('.ivu-select-dropdown').show();
     }, function() {
         $('.ivu-select-dropdown').hide();
+    })
+
+    $('.s-icon-modify').parent().on("click", function() {
+        window.location.href = "./settings.html";
+    })
+
+    // dashbaord.html
+
+    $('.mini-card').on("click", function() {
+        window.location.href = "./settings.html";
     })
 
     $('.ivu-modal-close').on("click", function() {
@@ -56,4 +67,21 @@ $(document).ready(function() {
         $('#postAppStep3 .ivu-modal-wrap').removeClass("ivu-modal-hidden");
         $('#postAppStep3 .ivu-modal').show();
     });
+
+    // settings.html
+    $(".setting-item:eq(0)").on("click", function() {
+        window.location.href = "./profile.html";
+    })
+
+    $(".setting-item:eq(1)").on("click", function() {
+        window.location.href = "./email.html";
+    })
+
+    $(".setting-item:eq(2)").on("click", function() {
+        window.location.href = "./avatar.html";
+    })
+
+    $(".setting-item:eq(3)").on("click", function() {
+        window.location.href = "./password.html";
+    })
 });
