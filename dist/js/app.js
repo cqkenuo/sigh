@@ -1,9 +1,9 @@
 $(document).ready(function() {
     
-    $('.ivu-dropdown').hover(function() {
-        $('.ivu-select-dropdown').show();
+    $('.user .ivu-dropdown').hover(function() {
+        $('.user .ivu-select-dropdown').show();
     }, function() {
-        $('.ivu-select-dropdown').hide();
+        $('.user .ivu-select-dropdown').hide();
     })
 
     $('.s-icon-modify').parent().on("click", function() {
@@ -83,5 +83,10 @@ $(document).ready(function() {
 
     $(".setting-item:eq(3)").on("click", function() {
         window.location.href = "./password.html";
+    })
+
+    //downloadlog.html
+    $(".app-list .ivu-select-selection").on("click", function() {
+        $(".app-list .ivu-select-dropdown").toggle();
     })
 });
