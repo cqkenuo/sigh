@@ -108,6 +108,12 @@ $(document).ready(function() {
     })
 
     //statistics.html
+    $(".ivu-date-picker-rel").flatpickr({
+        mode: "range",
+        dateFormat: "Y-m-d",
+        defaultDate: ["2016-10-10", "2016-10-20"]
+    });
+
     var myChart1 = echarts.init(document.querySelector('.s-report-main-chart'));
 
     var option = {
