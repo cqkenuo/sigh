@@ -106,4 +106,158 @@ $(document).ready(function() {
     $(".app-list .ivu-select-selection").on("click", function() {
         $(".app-list .ivu-select-dropdown").toggle();
     })
+
+    //statistics.html
+    var myChart1 = echarts.init(document.querySelector('.s-report-main-chart'));
+
+    var option = {
+        tooltip : {
+            trigger: 'axis'
+        },
+
+        xAxis : [
+            {
+                axisLabel:{
+                    rotate: 30,
+                    interval:0
+                },
+                axisLine:{
+                  lineStyle :{
+                      color: '#CECECE'
+                  }
+                },
+                type : 'category',
+                boundaryGap : false,
+                data : function (){
+                    var list = [];
+                    for (var i = 10; i <= 18; i++) {
+                        if(i<= 12){
+                            list.push('2016-'+i + '-01');
+                        }else{
+                            list.push('2017-'+(i-12) + '-01');
+                        }
+                    }
+                    return list;
+                }()
+            }
+        ],
+        yAxis : [
+            {
+
+                type : 'value',
+                axisLine:{
+                    lineStyle :{
+                        color: '#CECECE'
+                    }
+                }
+            }
+        ],
+        series : [
+            {
+                name:'PV',
+                type:'line',
+                symbol:'none',
+                smooth: 0.2,
+                color:['rgb(255, 187, 68)'],
+                data:[1, 3, 1, 2, 2, 2, 1, 0]
+            },
+            {
+                name:'UV',
+                type:'line',
+                symbol:'none',
+                smooth: 0.2,
+                color:['rgb(235, 77, 68)'],
+                data:[0, 0, 0, 0, 1, 0, 1, 0]
+            }
+        ]
+    };
+
+    myChart1.setOption(option);
+
+    var myChart2 = echarts.init(document.querySelector('.EChartsMap .charts.echarts-bar'));
+ 
+    option = {
+        tooltip : {
+            trigger: 'item'
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data:['iphone']
+        },
+        visualMap: {
+            min: 0,
+            max: 200,
+            left: 'left',
+            top: 'bottom',
+            text:['高','低'],           // 文本，默认为数值文本
+            calculable : true
+        },
+        toolbox: {
+            show: true,
+            orient : 'vertical',
+            left: 'right',
+            top: 'center',
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        series : [
+            {
+                name: '新用户下载量',
+                type: 'map',
+                mapType: 'china',
+                roam: false,
+                label: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data:[
+                    {name: '北京',value: Math.round(Math.random()*1000)},
+                    {name: '天津',value: Math.round(Math.random()*1000)},
+                    {name: '上海',value: Math.round(Math.random()*1000)},
+                    {name: '重庆',value: Math.round(Math.random()*1000)},
+                    {name: '河北',value: Math.round(Math.random()*1000)},
+                    {name: '河南',value: Math.round(Math.random()*1000)},
+                    {name: '云南',value: Math.round(Math.random()*1000)},
+                    {name: '辽宁',value: Math.round(Math.random()*1000)},
+                    {name: '黑龙江',value: Math.round(Math.random()*1000)},
+                    {name: '湖南',value: Math.round(Math.random()*1000)},
+                    {name: '安徽',value: Math.round(Math.random()*1000)},
+                    {name: '山东',value: Math.round(Math.random()*1000)},
+                    {name: '新疆',value: Math.round(Math.random()*1000)},
+                    {name: '江苏',value: Math.round(Math.random()*1000)},
+                    {name: '浙江',value: Math.round(Math.random()*1000)},
+                    {name: '江西',value: Math.round(Math.random()*1000)},
+                    {name: '湖北',value: Math.round(Math.random()*1000)},
+                    {name: '广西',value: Math.round(Math.random()*1000)},
+                    {name: '甘肃',value: Math.round(Math.random()*1000)},
+                    {name: '山西',value: Math.round(Math.random()*1000)},
+                    {name: '内蒙古',value: Math.round(Math.random()*1000)},
+                    {name: '陕西',value: Math.round(Math.random()*1000)},
+                    {name: '吉林',value: Math.round(Math.random()*1000)},
+                    {name: '福建',value: Math.round(Math.random()*1000)},
+                    {name: '贵州',value: Math.round(Math.random()*1000)},
+                    {name: '广东',value: Math.round(Math.random()*1000)},
+                    {name: '青海',value: Math.round(Math.random()*1000)},
+                    {name: '西藏',value: Math.round(Math.random()*1000)},
+                    {name: '四川',value: Math.round(Math.random()*1000)},
+                    {name: '宁夏',value: Math.round(Math.random()*1000)},
+                    {name: '海南',value: Math.round(Math.random()*1000)},
+                    {name: '台湾',value: Math.round(Math.random()*1000)},
+                    {name: '香港',value: Math.round(Math.random()*1000)},
+                    {name: '澳门',value: Math.round(Math.random()*1000)}
+                ]
+            }
+        ]
+    };
+
+    myChart2.setOption(option);
 });

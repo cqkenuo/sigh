@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel=icon href=favicon.ico>
+    <title>个人中心</title>
+    <link href=./dist/css/app.css rel="stylesheet">
+    <link href=./dist/css/main.css rel="stylesheet">
+    <link href=./dist/css/user.css rel="stylesheet">
+    <link href=./dist/css/menu.css rel="stylesheet">
+    <link href="./dist/css/webuploader.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div data-v-4c978c7a="" class="lay-main ivu-layout">
+            <div data-v-4c978c7a="" class="ivu-layout-header">
+                <div data-v-4c978c7a="" class="header-col logo">
+                    <a data-v-4c978c7a="" href="./dashboard.html" class="router-link-exact-active router-link-active">
+                        <img data-v-4c978c7a="" src="./dist/images/logo.png" alt=""><span data-v-4c978c7a="">iOS
+                            App超级签名</span>
+                    </a>
+                </div>
+                <div data-v-4c978c7a="" class="header-col breadcrumb">
+                    <div data-v-4c978c7a="" class="serve-info">
+                        <span data-v-4c978c7a="">技术客服：</span>
+                        <ul data-v-4c978c7a="" class="serve-qq-list">
+                            <li data-v-4c978c7a="">Telegram : +13214095102</li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-v-4c978c7a="" class="header-col user">
+                    <div data-v-4c978c7a="" class="ivu-dropdown">
+                        <div class="ivu-dropdown-rel">
+                            <button data-v-4c978c7a="" class="Poptip-btn">
+                                <span data-v-4c978c7a="" class="ml10">17603326303</span>
+                                <i data-v-4c978c7a="" class="arrow-down s-icon s-icon-arrow-down"
+                                    style="font-size: 10px; color: rgb(127, 143, 164);"></i>
+                                <img data-v-4c978c7a="" src="./dist/images/avatar.png" alt="" class="poptip-btn-img">
+                            </button>
+                        </div>
+                        <div class="ivu-select-dropdown" style="display: none;">
+                            <ul data-v-4c978c7a="" class="ivu-dropdown-menu">
+                                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                                        class="s-icon s-icon-modify"></i><span data-v-4c978c7a="">修改资料</span></li>
+                                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                                        class="s-icon s-icon-sign-out"></i><span data-v-4c978c7a="">退出</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-4c978c7a="" class="lay-body ivu-layout ivu-layout-has-sider">
+                <div data-v-4c978c7a="" class="ivu-layout-sider">
+                    <span class="ivu-layout-sider-zero-width-trigger" style="display: none;"><i
+                            class="ivu-icon ivu-icon-ios-menu"></i></span>
+                    <div class="ivu-layout-sider-children">
+                        <ul data-v-5c2ab2a8="" data-v-4c978c7a="" class="ivu-menu ivu-menu-light ivu-menu-vertical"
+                            width="200px">
+                            <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item"><i
+                                    data-v-5c2ab2a8="" class="iconfont icondailishangshouye"></i>首页</a>
+                            <a data-v-5c2ab2a8="" href="./settings.html" target="_self"
+                                class="menusec ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i
+                                    data-v-5c2ab2a8="" class="menusecond appstore-iconfont appstore-iconxitongshezhi"
+                                    style="font-size: 21px;"></i>账户设置</a>
+                            <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item"><i
+                                    data-v-5c2ab2a8="" class="s-icon s-icon-ad-plan"></i>下载记录</a>
+                            <hr data-v-5c2ab2a8="" class="menu-hr">
+                            <div data-v-5c2ab2a8="" class="add-app-layer">
+                                <button id="postApp" data-v-278d6aea="" data-v-5c2ab2a8=""
+                                    class="s-btn s-btn-primary"><i data-v-5c2ab2a8="" class="s-icon s-icon-drop-down"
+                                        data-v-278d6aea="" style="font-size: 15px; color: rgb(255, 255, 255);"></i><span
+                                        data-v-5c2ab2a8="" data-v-278d6aea="">发布应用</span></button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!---->
+                <div data-v-4c978c7a="" class="s-main-content ivu-layout-content">
+                    <div data-v-024a5ec8="" data-v-4c978c7a="" class="content ivu-layout">
+                        <div data-v-024a5ec8="" class="container mt20 ivu-row">
+                            <div data-v-024a5ec8="" class="flex">
+                                <div data-v-66b66804="" data-v-024a5ec8="" class="scard" style="height: 600px;">
+                                    <div data-v-66b66804="" class="scard-head">
+                                        <div data-v-66b66804="" class="scard-main-title">
+                                            <div data-v-024a5ec8="" data-v-66b66804="">
+                                                <div data-v-024a5ec8="" data-v-66b66804="" class="fl br">PV：11</div>
+                                                <div data-v-024a5ec8="" data-v-66b66804="" class="fl ml10 br">UV：8</div>
+                                                <!---->
+                                                <!---->
+                                                <!---->
+                                                <!---->
+                                                <!---->
+                                                <div data-v-024a5ec8="" class="flr ivu-date-picker" data-v-66b66804=""
+                                                    style="width: 274px;">
+                                                    <div class="ivu-date-picker-rel">
+                                                        <div
+                                                            class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type ivu-date-picker-editor">
+                                                            <!----><span class="ivu-input-suffix"><i
+                                                                    class="ivu-icon ivu-icon-ios-calendar-outline"></i></span><i
+                                                                class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i><input
+                                                                autocomplete="off" spellcheck="false" type="text"
+                                                                placeholder="选择日期"
+                                                                class="ivu-input ivu-input-default ivu-input-with-suffix">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-select-dropdown" style="display: none;">
+                                                        <div>
+                                                            <div class="ivu-picker-panel-body-wrapper ivu-date-picker-with-range ivu-picker-panel-with-sidebar"
+                                                                steps="">
+                                                                <div class="ivu-picker-panel-sidebar">
+                                                                    <div class="ivu-picker-panel-shortcut">今天</div>
+                                                                    <div class="ivu-picker-panel-shortcut">昨天</div>
+                                                                    <div class="ivu-picker-panel-shortcut">最近7天</div>
+                                                                    <div class="ivu-picker-panel-shortcut">最近30天</div>
+                                                                    <div class="ivu-picker-panel-shortcut">本月</div>
+                                                                    <div class="ivu-picker-panel-shortcut">上月</div>
+                                                                </div>
+                                                                <div
+                                                                    class="ivu-picker-panel-body ivu-picker-panel-body-date">
+                                                                    <div
+                                                                        class="ivu-picker-panel-content ivu-picker-panel-content-left">
+                                                                        <div class="ivu-date-picker-header"><span
+                                                                                class="ivu-picker-panel-icon-btn ivu-date-picker-prev-btn ivu-date-picker-prev-btn-arrow-double"><i
+                                                                                    class="ivu-icon ivu-icon-ios-arrow-back"></i></span><span
+                                                                                class="ivu-picker-panel-icon-btn ivu-date-picker-prev-btn ivu-date-picker-prev-btn-arrow"><i
+                                                                                    class="ivu-icon ivu-icon-ios-arrow-back"></i></span><span><span
+                                                                                    class="ivu-date-picker-header-label">2020年</span>
+                                                                                <span
+                                                                                    class="ivu-date-picker-header-label">1月</span></span>
+                                                                            <!---->
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div class="ivu-date-picker-cells">
+                                                                            <div class="ivu-date-picker-cells-header">
+                                                                                <span>
+                                                                                    日
+                                                                                </span><span>
+                                                                                    一
+                                                                                </span><span>
+                                                                                    二
+                                                                                </span><span>
+                                                                                    三
+                                                                                </span><span>
+                                                                                    四
+                                                                                </span><span>
+                                                                                    五
+                                                                                </span><span>
+                                                                                    六
+                                                                                </span></div><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>29</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>30</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>31</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>1</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>2</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>3</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>4</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>5</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>6</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>7</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>8</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>9</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>10</em></span><span
+                                                                                class="ivu-date-picker-cells-cell"><em>11</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-selected ivu-date-picker-cells-focused"><em>12</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>13</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>14</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>15</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>16</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>17</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>18</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>19</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>20</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>21</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>22</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>23</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>24</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>25</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>26</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>27</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>28</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>29</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>30</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>31</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>1</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>2</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>3</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>4</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>5</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>6</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>7</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>8</em></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="ivu-picker-panel-content ivu-picker-panel-content-right">
+                                                                        <div class="ivu-date-picker-header">
+                                                                            <!---->
+                                                                            <!----><span><span
+                                                                                    class="ivu-date-picker-header-label">2020年</span>
+                                                                                <span
+                                                                                    class="ivu-date-picker-header-label">2月</span></span><span
+                                                                                class="ivu-picker-panel-icon-btn ivu-date-picker-next-btn ivu-date-picker-next-btn-arrow-double"><i
+                                                                                    class="ivu-icon ivu-icon-ios-arrow-forward"></i></span><span
+                                                                                class="ivu-picker-panel-icon-btn ivu-date-picker-next-btn ivu-date-picker-next-btn-arrow"><i
+                                                                                    class="ivu-icon ivu-icon-ios-arrow-forward"></i></span>
+                                                                        </div>
+                                                                        <div class="ivu-date-picker-cells">
+                                                                            <div class="ivu-date-picker-cells-header">
+                                                                                <span>
+                                                                                    日
+                                                                                </span><span>
+                                                                                    一
+                                                                                </span><span>
+                                                                                    二
+                                                                                </span><span>
+                                                                                    三
+                                                                                </span><span>
+                                                                                    四
+                                                                                </span><span>
+                                                                                    五
+                                                                                </span><span>
+                                                                                    六
+                                                                                </span></div><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>26</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>27</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>28</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>29</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>30</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>31</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>1</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>2</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>3</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>4</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>5</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>6</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>7</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>8</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>9</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>10</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>11</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-selected ivu-date-picker-cells-cell-today"><em>12</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>13</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>14</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>15</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>16</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>17</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>18</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>19</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>20</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>21</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>22</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>23</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>24</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>25</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>26</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>27</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>28</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>29</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>1</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>2</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>3</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>4</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>5</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>6</em></span><span
+                                                                                class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>7</em></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ivu-picker-panel-content"
+                                                                        style="display: none;">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-c332ea4c="" data-v-024a5ec8=""
+                                                    class="flex-scroll app-list mr10 flr mt4" data-v-66b66804=""><i
+                                                        data-v-c332ea4c="" class="search s-icon s-icon-search"
+                                                        style="font-size: 15px; color: rgb(235, 237, 242);"></i>
+                                                    <div data-v-c332ea4c=""
+                                                        class="ivu-select ivu-select-single ivu-select-default">
+                                                        <div tabindex="-1" class="ivu-select-selection"><input
+                                                                type="hidden">
+                                                            <div class="">
+                                                                <!---->
+                                                                <!----><span class=""
+                                                                    style="display: none;"></span><input type="text"
+                                                                    placeholder="所有应用" autocomplete="off"
+                                                                    spellcheck="false" class="ivu-select-input">
+                                                                <!----><i
+                                                                    class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ivu-select-dropdown"
+                                                            style="display: none; min-width: 270px; position: absolute; will-change: top, left; transform-origin: center top; top: 32px; left: 0px;"
+                                                            x-placement="bottom-start">
+                                                            <ul class="ivu-select-not-found" style="display: none;">
+                                                                <li>无匹配数据</li>
+                                                            </ul>
+                                                            <ul class="ivu-select-dropdown-list">
+                                                                <li data-v-c332ea4c="" class="allsec ivu-select-item">
+                                                                    所有应用</li>
+                                                                <li data-v-c332ea4c=""
+                                                                    class="option-item ivu-select-item">
+                                                                    <div data-v-c332ea4c=""><img data-v-c332ea4c=""
+                                                                            src="https://static.app2.xin/icon/5e1d84b87a205.png"
+                                                                            alt=""></div>
+                                                                    <div data-v-c332ea4c="" class="sec">
+                                                                        <p data-v-c332ea4c="">盛大棋牌</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="ivu-select-loading" style="display: none;">加载中
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-66b66804="" class="scard-sub-title">
+
+                                        </div>
+                                    </div>
+                                    <div data-v-66b66804="" class="scard-main">
+                                        <div data-v-d9c7544c="" data-v-024a5ec8="" class="s-report-main"
+                                            data-v-66b66804="">
+                                            <div data-v-d9c7544c="" class="h33"></div>
+                                            <div data-v-d9c7544c="" class="s-report-main-legend">
+                                                <!---->
+                                                <div data-v-d9c7544c="" class="s-report-main-legend-list mt20">
+                                                    <div data-v-d9c7544c=""
+                                                        class="ivu-checkbox-group ivu-checkbox-large"><label
+                                                            data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-wrapper-checked ivu-checkbox-default"><span
+                                                                data-v-036a914a=""
+                                                                class="ivu-checkbox ivu-checkbox-checked"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(255, 187, 68); background-color: rgb(255, 187, 68);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="pv"></span>
+                                                            pv
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 73px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        PV值：每打开一次下载页，记录1个PV，一天内同一访客多次打开同一页面PV计算多次。
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-wrapper-checked ivu-checkbox-default"><span
+                                                                data-v-036a914a=""
+                                                                class="ivu-checkbox ivu-checkbox-checked"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(235, 77, 68); background-color: rgb(235, 77, 68);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="uv"></span>
+                                                            uv
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 154px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        UV值：1天（00:00-24:00）之内，访问下载页的不重复用户数（以浏览器cookie为依据），一天内同一访客多次访问下载页只被计算1次。
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-default"><span
+                                                                data-v-036a914a="" class="ivu-checkbox"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(74, 216, 174); background-color: rgb(255, 255, 255);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="ip"></span>
+                                                            ip
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 232px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        IP值：1天（00:00-24:00）之内，访问下载页的不重复IP数。一天内相同IP地址多次访问下载页只被计算1次。
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-default"><span
+                                                                data-v-036a914a="" class="ivu-checkbox"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(42, 159, 246); background-color: rgb(255, 255, 255);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="down"></span>
+                                                            下载量
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 337px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        下载量：1天（00:00-24:00）之内，每下载一次应用，记录1个下载，一天内同一访客多次下载同一应用，下载数只被记录1次。
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-default"><span
+                                                                data-v-036a914a="" class="ivu-checkbox"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(210, 94, 230); background-color: rgb(255, 255, 255);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="launch"></span>
+                                                            启动次数
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 454px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        启动次数：打开应用视为启动。完全退出或后台运行超过30s后再次进入应用，视为一次新启动。
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-default"><span
+                                                                data-v-036a914a="" class="ivu-checkbox"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(138, 91, 246); background-color: rgb(255, 255, 255);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input"
+                                                                    value="active_user"></span>
+                                                            活跃用户
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 571px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        活跃用户：启动过应用的用户（去重），启动过一次的用户即视为活跃用户，包括新用户与老用户。这里展示的是截止到各个整点时刻的当活跃用户跃用户
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label><label data-v-036a914a="" data-v-d9c7544c=""
+                                                            class="ivu-checkbox-wrapper ivu-checkbox-group-item ivu-checkbox-default"><span
+                                                                data-v-036a914a="" class="ivu-checkbox"><span
+                                                                    data-v-036a914a="" class="ivu-checkbox-inner"
+                                                                    style="border-color: rgb(0, 200, 220); background-color: rgb(255, 255, 255);"></span><input
+                                                                    data-v-036a914a="" type="checkbox"
+                                                                    class="ivu-checkbox-input" value="new_user"></span>
+                                                            启动用户
+                                                            <div data-v-02012426="" data-v-d9c7544c=""
+                                                                class="ivu-poptip" data-v-036a914a="">
+                                                                <div data-v-02012426="" class="ivu-poptip-rel"><i
+                                                                        data-v-d9c7544c=""
+                                                                        class="tips s-icon s-icon-explain"
+                                                                        data-v-02012426=""
+                                                                        style="font-size: 16px; color: rgb(221, 221, 221);"></i>
+                                                                </div>
+                                                                <div data-v-02012426="" class="ivu-poptip-popper"
+                                                                    style="display: none; position: absolute; will-change: top, left; top: 20px; left: 688px;"
+                                                                    x-placement="bottom-start">
+                                                                    <div data-v-02012426="" class="ivu-poptip-content">
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-arrow"></div>
+                                                                        <!---->
+                                                                        <div data-v-02012426=""
+                                                                            class="ivu-poptip-inner">
+                                                                            <!---->
+                                                                            <div data-v-02012426=""
+                                                                                class="ivu-poptip-body">
+                                                                                <div data-v-02012426=""
+                                                                                    class="ivu-poptip-body-content">
+                                                                                    <div data-v-d9c7544c=""
+                                                                                        class="tips-table">
+                                                                                        启动用户：第一次启动应用的用户（以设备为判断标准）
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></label></div>
+                                                </div>
+                                            </div>
+                                            <div data-v-d9c7544c="" class="s-report-main-chart">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-024a5ec8="" class="flex" style="height: 600px;">
+                                <div data-v-024a5ec8="" class="EChartsMap">
+                                    <div data-v-66b66804="" data-v-024a5ec8="" class="scard">
+                                        <div data-v-66b66804="" class="scard-head">
+                                            <div data-v-66b66804="" class="scard-main-title">
+                                                <p data-v-024a5ec8="" data-v-66b66804="">区域新用户下载量</p>
+                                            </div>
+                                            <div data-v-66b66804="" class="scard-sub-title">
+
+                                            </div>
+                                        </div>
+                                        <div data-v-66b66804="" class="scard-main">
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <div data-v-9d34062e="" data-v-024a5ec8="" class="charts echarts-bar"
+                                                data-v-66b66804="" _echarts_instance_="ec_1581476184705"
+                                                style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+                                                <div
+                                                    style="position: relative; overflow: hidden; width: 570px; height: 440px; padding: 0px; margin: 0px; border-width: 0px;">
+                                                    <canvas data-zr-dom-id="zr_0" width="1140" height="880"
+                                                        style="position: absolute; left: 0px; top: 0px; width: 570px; height: 440px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-024a5ec8="" class="top">
+                                    <div data-v-024a5ec8="">
+                                        <div data-v-024a5ec8="" class="flr ivu-date-picker" style="width: 274px;">
+                                            <div class="ivu-date-picker-rel">
+                                                <div
+                                                    class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type ivu-date-picker-editor">
+                                                    <!----><span class="ivu-input-suffix"><i
+                                                            class="ivu-icon ivu-icon-ios-calendar-outline"></i></span><i
+                                                        class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i><input
+                                                        autocomplete="off" spellcheck="false" type="text"
+                                                        placeholder="选择日期"
+                                                        class="ivu-input ivu-input-default ivu-input-with-suffix">
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <div class="ivu-select-dropdown" style="display: none;">
+                                                <div>
+                                                    <div class="ivu-picker-panel-body-wrapper ivu-date-picker-with-range ivu-picker-panel-with-sidebar"
+                                                        steps="">
+                                                        <div class="ivu-picker-panel-sidebar">
+                                                            <div class="ivu-picker-panel-shortcut">今天</div>
+                                                            <div class="ivu-picker-panel-shortcut">昨天</div>
+                                                            <div class="ivu-picker-panel-shortcut">最近7天</div>
+                                                            <div class="ivu-picker-panel-shortcut">最近30天</div>
+                                                            <div class="ivu-picker-panel-shortcut">本月</div>
+                                                            <div class="ivu-picker-panel-shortcut">上月</div>
+                                                        </div>
+                                                        <div class="ivu-picker-panel-body ivu-picker-panel-body-date">
+                                                            <div
+                                                                class="ivu-picker-panel-content ivu-picker-panel-content-left">
+                                                                <div class="ivu-date-picker-header"><span
+                                                                        class="ivu-picker-panel-icon-btn ivu-date-picker-prev-btn ivu-date-picker-prev-btn-arrow-double"><i
+                                                                            class="ivu-icon ivu-icon-ios-arrow-back"></i></span><span
+                                                                        class="ivu-picker-panel-icon-btn ivu-date-picker-prev-btn ivu-date-picker-prev-btn-arrow"><i
+                                                                            class="ivu-icon ivu-icon-ios-arrow-back"></i></span><span><span
+                                                                            class="ivu-date-picker-header-label">2020年</span>
+                                                                        <span
+                                                                            class="ivu-date-picker-header-label">1月</span></span>
+                                                                    <!---->
+                                                                    <!---->
+                                                                </div>
+                                                                <div class="ivu-date-picker-cells">
+                                                                    <div class="ivu-date-picker-cells-header"><span>
+                                                                            日
+                                                                        </span><span>
+                                                                            一
+                                                                        </span><span>
+                                                                            二
+                                                                        </span><span>
+                                                                            三
+                                                                        </span><span>
+                                                                            四
+                                                                        </span><span>
+                                                                            五
+                                                                        </span><span>
+                                                                            六
+                                                                        </span></div><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>29</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>30</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>31</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>1</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>2</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>3</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>4</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>5</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>6</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>7</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>8</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>9</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>10</em></span><span
+                                                                        class="ivu-date-picker-cells-cell"><em>11</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-selected ivu-date-picker-cells-focused"><em>12</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>13</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>14</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>15</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>16</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>17</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>18</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>19</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>20</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>21</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>22</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>23</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>24</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>25</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>26</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>27</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>28</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>29</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>30</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>31</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>1</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>2</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>3</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>4</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>5</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>6</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>7</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-next-month"><em>8</em></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="ivu-picker-panel-content ivu-picker-panel-content-right">
+                                                                <div class="ivu-date-picker-header">
+                                                                    <!---->
+                                                                    <!----><span><span
+                                                                            class="ivu-date-picker-header-label">2020年</span>
+                                                                        <span
+                                                                            class="ivu-date-picker-header-label">2月</span></span><span
+                                                                        class="ivu-picker-panel-icon-btn ivu-date-picker-next-btn ivu-date-picker-next-btn-arrow-double"><i
+                                                                            class="ivu-icon ivu-icon-ios-arrow-forward"></i></span><span
+                                                                        class="ivu-picker-panel-icon-btn ivu-date-picker-next-btn ivu-date-picker-next-btn-arrow"><i
+                                                                            class="ivu-icon ivu-icon-ios-arrow-forward"></i></span>
+                                                                </div>
+                                                                <div class="ivu-date-picker-cells">
+                                                                    <div class="ivu-date-picker-cells-header"><span>
+                                                                            日
+                                                                        </span><span>
+                                                                            一
+                                                                        </span><span>
+                                                                            二
+                                                                        </span><span>
+                                                                            三
+                                                                        </span><span>
+                                                                            四
+                                                                        </span><span>
+                                                                            五
+                                                                        </span><span>
+                                                                            六
+                                                                        </span></div><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>26</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>27</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>28</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>29</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>30</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-prev-month"><em>31</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>1</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>2</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>3</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>4</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>5</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>6</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>7</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>8</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>9</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>10</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-range"><em>11</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-selected ivu-date-picker-cells-cell-today"><em>12</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>13</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>14</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>15</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>16</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>17</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>18</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>19</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>20</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>21</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>22</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>23</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>24</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>25</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>26</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>27</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>28</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled"><em>29</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>1</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>2</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>3</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>4</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>5</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>6</em></span><span
+                                                                        class="ivu-date-picker-cells-cell ivu-date-picker-cells-cell-disabled ivu-date-picker-cells-cell-next-month"><em>7</em></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ivu-picker-panel-content"
+                                                                style="display: none;">
+                                                                <!---->
+                                                            </div>
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-c332ea4c="" data-v-024a5ec8=""
+                                            class="flex-scroll app-list flr mr10 mt4"><i data-v-c332ea4c=""
+                                                class="search s-icon s-icon-search"
+                                                style="font-size: 15px; color: rgb(235, 237, 242);"></i>
+                                            <div data-v-c332ea4c=""
+                                                class="ivu-select ivu-select-single ivu-select-default">
+                                                <div tabindex="-1" class="ivu-select-selection"><input type="hidden">
+                                                    <div class="">
+                                                        <!---->
+                                                        <!----><span class="" style="display: none;"></span><input
+                                                            type="text" placeholder="所有应用" autocomplete="off"
+                                                            spellcheck="false" class="ivu-select-input">
+                                                        <!----><i
+                                                            class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ivu-select-dropdown"
+                                                    style="display: none; min-width: 270px; position: absolute; will-change: top, left; transform-origin: center bottom; top: -452px; left: 0px;"
+                                                    x-placement="top-start" x-out-of-boundaries="">
+                                                    <ul class="ivu-select-not-found" style="display: none;">
+                                                        <li>无匹配数据</li>
+                                                    </ul>
+                                                    <ul class="ivu-select-dropdown-list">
+                                                        <li data-v-c332ea4c="" class="allsec ivu-select-item">所有应用</li>
+                                                        <li data-v-c332ea4c="" class="option-item ivu-select-item">
+                                                            <div data-v-c332ea4c=""><img data-v-c332ea4c=""
+                                                                    src="https://static.app2.xin/icon/5e1d84b87a205.png"
+                                                                    alt=""></div>
+                                                            <div data-v-c332ea4c="" class="sec">
+                                                                <p data-v-c332ea4c="">盛大棋牌</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="ivu-select-loading" style="display: none;">加载中</ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-c332ea4c="" data-v-024a5ec8=""
+                                            class="flex-scroll app-list flr mr10 mt4"><i data-v-c332ea4c=""
+                                                class="search s-icon s-icon-search"
+                                                style="font-size: 15px; color: rgb(235, 237, 242);"></i>
+                                            <div data-v-c332ea4c=""
+                                                class="ivu-select ivu-select-single ivu-select-default">
+                                                <div tabindex="-1" class="ivu-select-selection"><input type="hidden"
+                                                        value="count">
+                                                    <div class="">
+                                                        <!---->
+                                                        <!----><span class="" style="display: none;"></span><input
+                                                            type="text" placeholder="" autocomplete="off"
+                                                            spellcheck="false" class="ivu-select-input">
+                                                        <!----><i
+                                                            class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ivu-select-dropdown"
+                                                    style="display: none; min-width: 270px; position: absolute; will-change: top, left; transform-origin: center bottom; top: -488px; left: 0px;"
+                                                    x-placement="top-start" x-out-of-boundaries="">
+                                                    <ul class="ivu-select-not-found" style="display: none;">
+                                                        <li>无匹配数据</li>
+                                                    </ul>
+                                                    <ul class="ivu-select-dropdown-list">
+                                                        <li data-v-c332ea4c="" class="ivu-select-item">PV</li>
+                                                        <li data-v-c332ea4c="" class="ivu-select-item">UV</li>
+                                                        <li data-v-c332ea4c=""
+                                                            class="ivu-select-item ivu-select-item-selected">新用户下载量</li>
+                                                        <li data-v-c332ea4c="" class="ivu-select-item">老用户下载量</li>
+                                                        <li data-v-c332ea4c="" class="ivu-select-item">IP</li>
+                                                    </ul>
+                                                    <ul class="ivu-select-loading" style="display: none;">加载中</ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-024a5ec8="" class="top-box">
+                                        <p data-v-024a5ec8="" class="area-list-title ">区域新用户下载 Top10</p>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <div data-v-024a5ec8="" class="sub bold">
+                                            <div data-v-024a5ec8="">区域名称</div>
+                                            <div data-v-024a5ec8="">新用户下载量</div>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div data-v-024a5ec8="" class="h30"></div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+        <script src="./dist/js/jquery.min.js"></script>
+        <script src="./dist/js/app.js"></script>
+        <script src="./dist/js/echarts.min.js"></script>
+        <script src="./dist/js/china.js"></script>
+</body>
+
+</html>
