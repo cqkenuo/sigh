@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+        <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <link rel=icon href=favicon.ico>
+        <title>发布应用</title>
+        <link href=./dist/css/app.css rel="stylesheet">
+        <link href=./dist/css/main.css rel="stylesheet">
+        <link href=./dist/css/user.css rel="stylesheet">
+        <link href=./dist/css/menu.css rel="stylesheet">
+        <link href="./dist/css/webuploader.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+          <div data-v-4c978c7a="" class="lay-main ivu-layout">
+            <div data-v-4c978c7a="" class="ivu-layout-header">
+              <div data-v-4c978c7a="" class="header-col logo">
+                  <a data-v-4c978c7a="" href="./dashboard.html" class="router-link-exact-active router-link-active">
+                      <img data-v-4c978c7a="" src="./dist/images/logo.png" alt=""><span data-v-4c978c7a="">iOS App超级签名</span>
+                  </a>
+              </div>
+              <div data-v-4c978c7a="" class="header-col breadcrumb">
+                <div data-v-4c978c7a="" class="serve-info">
+                  <span data-v-4c978c7a="">技术客服：</span>
+                  <ul data-v-4c978c7a="" class="serve-qq-list">
+                    <li data-v-4c978c7a="">Telegram : +13214095102</li>
+                  </ul>
+                </div>
+              </div>
+              <div data-v-4c978c7a="" class="header-col user">
+                <div data-v-4c978c7a="" class="ivu-dropdown">
+                  <div class="ivu-dropdown-rel">
+                    <button data-v-4c978c7a="" class="Poptip-btn">
+                      <span data-v-4c978c7a="" class="ml10">17603326303</span>
+                      <i data-v-4c978c7a="" class="arrow-down s-icon s-icon-arrow-down" style="font-size: 10px; color: rgb(127, 143, 164);"></i>
+                      <img data-v-4c978c7a="" src="./dist/images/avatar.png" alt="" class="poptip-btn-img">
+                    </button>
+                  </div>
+                  <div class="ivu-select-dropdown" style="display: none;">
+                    <ul data-v-4c978c7a="" class="ivu-dropdown-menu">
+                      <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a="" class="s-icon s-icon-modify"></i><span data-v-4c978c7a="">修改资料</span></li>
+                      <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a="" class="s-icon s-icon-sign-out"></i><span data-v-4c978c7a="">退出</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-v-4c978c7a="" class="lay-body ivu-layout ivu-layout-has-sider">
+                <div data-v-4c978c7a="" class="ivu-layout-sider">
+                  <span class="ivu-layout-sider-zero-width-trigger" style="display: none;"><i class="ivu-icon ivu-icon-ios-menu"></i></span>
+                  <div class="ivu-layout-sider-children">
+                    <ul data-v-5c2ab2a8="" data-v-4c978c7a="" class="ivu-menu ivu-menu-light ivu-menu-vertical" width="200px">
+                      <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item"><i data-v-5c2ab2a8="" class="iconfont icondailishangshouye"></i>首页</a>
+                      <a data-v-5c2ab2a8="" href="./settings.html" target="_self" class="menusec ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i data-v-5c2ab2a8="" class="menusecond appstore-iconfont appstore-iconxitongshezhi" style="font-size: 21px;"></i>账户设置</a>
+                      <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item"><i data-v-5c2ab2a8="" class="s-icon s-icon-ad-plan"></i>下载记录</a>
+                      <hr data-v-5c2ab2a8="" class="menu-hr">
+                      <div data-v-5c2ab2a8="" class="add-app-layer">
+                        <button id="postApp" data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary"><i data-v-5c2ab2a8="" class="s-icon s-icon-drop-down" data-v-278d6aea="" style="font-size: 15px; color: rgb(255, 255, 255);"></i><span data-v-5c2ab2a8="" data-v-278d6aea="">发布应用</span></button>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <!---->
+                <div data-v-4c978c7a="" class="s-main-content ivu-layout-content">
+                  <div data-v-3c6b26e2="" data-v-4c978c7a="" class="content ivu-layout">
+                    <div data-v-3c6b26e2="" class="container mt20 ivu-row">
+                      <h1 data-v-3c6b26e2="">发布应用</h1>
+                    </div>
+                    <div data-v-3c6b26e2="" class="box setting-wrapper ivu-row">
+                      <div data-v-3c6b26e2="" class="content-body">
+                        <div data-v-3c6b26e2="" class="mb30 ivu-row">
+                          <div data-v-3c6b26e2="" class="ivu-col ivu-col-span-16" clas="user-info-label">
+                            <form data-v-3c6b26e2="" autocomplete="off" class="form-class ivu-form ivu-form-label-top" action="/post/app_submit" method="post" enctype="multipart/form-data">
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">IPA文件</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <input type="file" name="file" class="ivu-input ivu-input-large" accept=".ipa" required="" style="width: 50%;">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">适用下载渠道</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <select name="channel" class="ivu-input ivu-input-large" data-select="" required="" style="width: 50%;">
+                                      <option value="">请选择</option>
+                                      <option value="1">公有</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">提取方式</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <select name="shareMethod" class="ivu-input ivu-input-large" data-select="" required="" style="width: 50%;">
+                                      <option value="">请选择</option>
+                                      <option value="1">公开</option>
+                                      <option value="4">授权码</option>
+                                   </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">应用类型</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <textarea name="appType" class="ivu-input ivu-input-large" rows="1" maxlength="300" required=""></textarea>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">描述</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <textarea name="description" class="ivu-input ivu-input-large" rows="3" maxlength="500" required=""></textarea>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">备注</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <textarea name="description" class="ivu-input ivu-input-large" rows="3" maxlength="500" required=""></textarea>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">自动安装</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
+                                    <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                    <div style="font-size: 14px;">
+                                    <label>
+                                      <input type="radio" name="autoInstall" value="yes">
+                                      打开
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="autoInstall" value="no">
+                                        关闭
+                                    </label>
+                                    <label>
+                                    （下载页面是否自动安装，默认关闭）
+                                    </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="submit-box mb0 ivu-form-item">
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <button data-v-278d6aea="" data-v-3c6b26e2="" class="primary s-btn s-btn-primary" data-v-e02a80a8="">发布应用</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+          </div>
+        </div>
+        <script src="./dist/js/jquery.min.js"></script>
+        <script src="./dist/js/app.js"></script>
+    </body>
+</html>
