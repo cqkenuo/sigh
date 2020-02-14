@@ -116,6 +116,10 @@ $(document).ready(function() {
         window.location.href = "./password.html";
     })
 
+    $('.z-setting').on("click", function() {
+        window.location.href = "./settings.html";
+    })
+
     //downloadlog.html
     $(".app-list .ivu-select-selection").on("click", function() {
         $(".app-list .ivu-select-dropdown").toggle();
