@@ -85,6 +85,20 @@ $(document).ready(function() {
         window.location.href = "./settings.html";
     })
 
+    $('.ivu-poptip-popper').hover(function() {
+        $(this).addClass("hover");
+    }, function() {
+        $(this).removeClass("hover").hide();
+    })
+
+    $('.ivu-poptip').hover(function() {
+        $(this).find('.ivu-poptip-popper').css({top: "inherit", left: "inherit"}).show();
+    }, function() {
+        if (!$(this).find('.ivu-poptip-popper').hasClass("hover")) {
+            $(this).find('.ivu-poptip-popper').hide();
+        }
+    })
+
     // settings.html
     $(".setting-item:eq(0)").on("click", function() {
         window.location.href = "./profile.html";
