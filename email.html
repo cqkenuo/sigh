@@ -72,13 +72,24 @@
                       <div data-v-3c6b26e2="" class="content-body">
                         <div data-v-3c6b26e2="" class="mb30 ivu-row">
                           <div data-v-3c6b26e2="" class="ivu-col ivu-col-span-16" clas="user-info-label">
-                            <form data-v-3c6b26e2="" autocomplete="off" class="form-class ivu-form ivu-form-label-top" action="profile" method="POST">
+                            <form data-v-3c6b26e2="" autocomplete="off" class="form-class ivu-form ivu-form-label-top" action="email" method="POST">
                               <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
-                                <label data-v-e02a80a8="" class="ivu-form-item-label">昵称</label>
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">邮箱地址</label>
+                                <div data-v-e02a80a8="" class="ivu-form-item-content">
+                                  <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type ivu-input-group ivu-input-group-default ivu-input-group-with-append ivu-input-with-search" style="margin-top: 6px;">
+                                    <div class="ivu-input-inner-container">
+                                      <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                      <input autocomplete="off" spellcheck="false" type="text" name="email" placeholder="请输入邮箱地址" class="ivu-input ivu-input-default" required>
+                                    </div>
+                                    <div id="sendCode" class="ivu-input-group-append ivu-input-search">获取验证码</div></div>
+                                </div>
+                              </div>
+                              <div data-v-e02a80a8="" data-v-3c6b26e2="" class="ivu-form-item ivu-form-item-required">
+                                <label data-v-e02a80a8="" class="ivu-form-item-label">验证码</label>
                                 <div data-v-e02a80a8="" class="ivu-form-item-content">
                                   <div data-v-48db84a6="" data-v-3c6b26e2="" class="ivu-input-wrapper ivu-input-wrapper-large ivu-input-type" data-v-e02a80a8="">
                                     <i data-v-48db84a6="" class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
-                                    <input data-v-48db84a6="" type="text" name="name" value="a153524303" placeholder="请输入昵称" unselectable="on" class="ivu-input ivu-input-large" required>
+                                    <input data-v-48db84a6="" type="text" name="code" placeholder="请输入收到的验证码" unselectable="on" class="ivu-input ivu-input-large" required>
                                   </div>
                                 </div>
                               </div>
