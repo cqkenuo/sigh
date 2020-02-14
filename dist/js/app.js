@@ -281,3 +281,18 @@ $(document).ready(function() {
 
     myChart2.setOption(option);
 });
+
+// updateApp.html
+$('#updateIpaTab').on("click", function() {
+    $('#updateApkTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+    $('#updateIpaTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+    $('#updateApkForm').hide();
+    $('#updateIpaForm').show();
+})
+
+$('#updateApkTab').on("click", function() {
+    $('#updateIpaTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+    $('#updateApkTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+    $('#updateIpaForm').hide();
+    $('#updateApkForm').show();
+})
