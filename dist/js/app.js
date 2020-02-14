@@ -305,3 +305,12 @@ $("#sendCode").on("click", function() {
     let email = $("input[name=email]").val();
     $.get(sendCodeUrl, {email: email, type: 2});
 })
+
+//avatar.html
+$('.ivu-upload-drag:not(input)').on('click', function() {
+    $("input.ivu-upload-input").click();
+})
+
+$("input.ivu-upload-input").on('change', function() {
+    $("form").submit();
+});
