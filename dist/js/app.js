@@ -356,4 +356,28 @@ $(document).ready(function() {
         event.preventDefault();
         $('#generateAuthorizeCodeForm .ivu-modal-close').click();
     })
+
+    //pushMessage.html
+
+    // let pushMessageUrl = baseUrl + "/post/message";
+
+    $("#pushMessagePlan").on("click", function() {
+        $("#pushMessagePlanForm .ivu-modal-mask").show();
+        $("#pushMessagePlanForm .ivu-modal-wrap").removeClass("ivu-modal-hidden");
+        $("#pushMessagePlanForm .ivu-modal").show();
+    })
+
+    // $("#pushMessagePlanForm form").on("submit", function (event) {
+    //     event.preventDefault();
+    //     let appId = $("input[name=appId]").val();
+    //     let number = $("input[name=number]").val();
+    //     $.get(pushMessageUrl, {appId: appId, number: number}, function() {
+    //         location.reload();
+    //     });
+    // })
+
+    $("#pushMessagePlanForm button:contains('取消')").on("click", function () {
+        event.preventDefault();
+        $('#pushMessagePlanForm .ivu-modal-close').click();
+    })
 });
