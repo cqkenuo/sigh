@@ -141,195 +141,219 @@ $(document).ready(function() {
     })
 
     //statistics.html
-    $(".ivu-date-picker-rel").flatpickr({
-        mode: "range",
-        dateFormat: "Y-m-d",
-        defaultDate: ["2016-10-10", "2016-10-20"]
+    // $(".ivu-date-picker-rel").flatpickr({
+    //     mode: "range",
+    //     dateFormat: "Y-m-d",
+    //     defaultDate: ["2016-10-10", "2016-10-20"]
+    // });
+
+    // var myChart1 = echarts.init(document.querySelector('.s-report-main-chart'));
+
+    // var option = {
+    //     tooltip : {
+    //         trigger: 'axis'
+    //     },
+
+    //     xAxis : [
+    //         {
+    //             axisLabel:{
+    //                 rotate: 30,
+    //                 interval:0
+    //             },
+    //             axisLine:{
+    //               lineStyle :{
+    //                   color: '#CECECE'
+    //               }
+    //             },
+    //             type : 'category',
+    //             boundaryGap : false,
+    //             data : function (){
+    //                 var list = [];
+    //                 for (var i = 10; i <= 18; i++) {
+    //                     if(i<= 12){
+    //                         list.push('2016-'+i + '-01');
+    //                     }else{
+    //                         list.push('2017-'+(i-12) + '-01');
+    //                     }
+    //                 }
+    //                 return list;
+    //             }()
+    //         }
+    //     ],
+    //     yAxis : [
+    //         {
+
+    //             type : 'value',
+    //             axisLine:{
+    //                 lineStyle :{
+    //                     color: '#CECECE'
+    //                 }
+    //             }
+    //         }
+    //     ],
+    //     series : [
+    //         {
+    //             name:'PV',
+    //             type:'line',
+    //             symbol:'none',
+    //             smooth: 0.2,
+    //             color:['rgb(255, 187, 68)'],
+    //             data:[1, 3, 1, 2, 2, 2, 1, 0]
+    //         },
+    //         {
+    //             name:'UV',
+    //             type:'line',
+    //             symbol:'none',
+    //             smooth: 0.2,
+    //             color:['rgb(235, 77, 68)'],
+    //             data:[0, 0, 0, 0, 1, 0, 1, 0]
+    //         }
+    //     ]
+    // };
+
+    // myChart1.setOption(option);
+
+    // var myChart2 = echarts.init(document.querySelector('.EChartsMap .charts.echarts-bar'));
+ 
+    // option = {
+    //     tooltip : {
+    //         trigger: 'item'
+    //     },
+    //     legend: {
+    //         orient: 'vertical',
+    //         left: 'left',
+    //         data:['iphone']
+    //     },
+    //     visualMap: {
+    //         min: 0,
+    //         max: 200,
+    //         left: 'left',
+    //         top: 'bottom',
+    //         text:['高','低'],           // 文本，默认为数值文本
+    //         calculable : true
+    //     },
+    //     toolbox: {
+    //         show: true,
+    //         orient : 'vertical',
+    //         left: 'right',
+    //         top: 'center',
+    //         feature : {
+    //             mark : {show: true},
+    //             dataView : {show: true, readOnly: false},
+    //             restore : {show: true},
+    //             saveAsImage : {show: true}
+    //         }
+    //     },
+    //     series : [
+    //         {
+    //             name: '新用户下载量',
+    //             type: 'map',
+    //             mapType: 'china',
+    //             roam: false,
+    //             label: {
+    //                 normal: {
+    //                     show: false
+    //                 },
+    //                 emphasis: {
+    //                     show: true
+    //                 }
+    //             },
+    //             data:[
+    //                 {name: '北京',value: Math.round(Math.random()*1000)},
+    //                 {name: '天津',value: Math.round(Math.random()*1000)},
+    //                 {name: '上海',value: Math.round(Math.random()*1000)},
+    //                 {name: '重庆',value: Math.round(Math.random()*1000)},
+    //                 {name: '河北',value: Math.round(Math.random()*1000)},
+    //                 {name: '河南',value: Math.round(Math.random()*1000)},
+    //                 {name: '云南',value: Math.round(Math.random()*1000)},
+    //                 {name: '辽宁',value: Math.round(Math.random()*1000)},
+    //                 {name: '黑龙江',value: Math.round(Math.random()*1000)},
+    //                 {name: '湖南',value: Math.round(Math.random()*1000)},
+    //                 {name: '安徽',value: Math.round(Math.random()*1000)},
+    //                 {name: '山东',value: Math.round(Math.random()*1000)},
+    //                 {name: '新疆',value: Math.round(Math.random()*1000)},
+    //                 {name: '江苏',value: Math.round(Math.random()*1000)},
+    //                 {name: '浙江',value: Math.round(Math.random()*1000)},
+    //                 {name: '江西',value: Math.round(Math.random()*1000)},
+    //                 {name: '湖北',value: Math.round(Math.random()*1000)},
+    //                 {name: '广西',value: Math.round(Math.random()*1000)},
+    //                 {name: '甘肃',value: Math.round(Math.random()*1000)},
+    //                 {name: '山西',value: Math.round(Math.random()*1000)},
+    //                 {name: '内蒙古',value: Math.round(Math.random()*1000)},
+    //                 {name: '陕西',value: Math.round(Math.random()*1000)},
+    //                 {name: '吉林',value: Math.round(Math.random()*1000)},
+    //                 {name: '福建',value: Math.round(Math.random()*1000)},
+    //                 {name: '贵州',value: Math.round(Math.random()*1000)},
+    //                 {name: '广东',value: Math.round(Math.random()*1000)},
+    //                 {name: '青海',value: Math.round(Math.random()*1000)},
+    //                 {name: '西藏',value: Math.round(Math.random()*1000)},
+    //                 {name: '四川',value: Math.round(Math.random()*1000)},
+    //                 {name: '宁夏',value: Math.round(Math.random()*1000)},
+    //                 {name: '海南',value: Math.round(Math.random()*1000)},
+    //                 {name: '台湾',value: Math.round(Math.random()*1000)},
+    //                 {name: '香港',value: Math.round(Math.random()*1000)},
+    //                 {name: '澳门',value: Math.round(Math.random()*1000)}
+    //             ]
+    //         }
+    //     ]
+    // };
+
+    // myChart2.setOption(option);
+
+    // updateApp.html
+    $('#updateIpaTab').on("click", function() {
+        $('#updateApkTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+        $('#updateIpaTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+        $('#updateApkForm').hide();
+        $('#updateIpaForm').show();
+    })
+
+    $('#updateApkTab').on("click", function() {
+        $('#updateIpaTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+        $('#updateApkTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
+        $('#updateIpaForm').hide();
+        $('#updateApkForm').show();
+    })
+
+    //email.html
+    let baseUrl = "https://ios.app88.xin";
+    let sendCodeUrl = baseUrl + "/email/send_code";
+
+    $("#sendCode").on("click", function() {
+        let email = $("input[name=email]").val();
+        $.get(sendCodeUrl, {email: email, type: 2});
+    })
+
+    //avatar.html
+    $('.ivu-upload-drag:not(input)').on('click', function() {
+        $("input.ivu-upload-input").click();
+    })
+
+    $("input.ivu-upload-input").on('change', function() {
+        $("form").submit();
     });
 
-    var myChart1 = echarts.init(document.querySelector('.s-report-main-chart'));
+    //authorize.html
 
-    var option = {
-        tooltip : {
-            trigger: 'axis'
-        },
+    let authorizeUrl = baseUrl + "/post/authorize";
 
-        xAxis : [
-            {
-                axisLabel:{
-                    rotate: 30,
-                    interval:0
-                },
-                axisLine:{
-                  lineStyle :{
-                      color: '#CECECE'
-                  }
-                },
-                type : 'category',
-                boundaryGap : false,
-                data : function (){
-                    var list = [];
-                    for (var i = 10; i <= 18; i++) {
-                        if(i<= 12){
-                            list.push('2016-'+i + '-01');
-                        }else{
-                            list.push('2017-'+(i-12) + '-01');
-                        }
-                    }
-                    return list;
-                }()
-            }
-        ],
-        yAxis : [
-            {
+    $("#generateAuthorizeCode").on("click", function() {
+        $("#generateAuthorizeCodeForm .ivu-modal-mask").show();
+        $("#generateAuthorizeCodeForm .ivu-modal-wrap").removeClass("ivu-modal-hidden");
+        $("#generateAuthorizeCodeForm .ivu-modal").show();
+    })
 
-                type : 'value',
-                axisLine:{
-                    lineStyle :{
-                        color: '#CECECE'
-                    }
-                }
-            }
-        ],
-        series : [
-            {
-                name:'PV',
-                type:'line',
-                symbol:'none',
-                smooth: 0.2,
-                color:['rgb(255, 187, 68)'],
-                data:[1, 3, 1, 2, 2, 2, 1, 0]
-            },
-            {
-                name:'UV',
-                type:'line',
-                symbol:'none',
-                smooth: 0.2,
-                color:['rgb(235, 77, 68)'],
-                data:[0, 0, 0, 0, 1, 0, 1, 0]
-            }
-        ]
-    };
+    $("#generateAuthorizeCodeForm form").on("submit", function (event) {
+        event.preventDefault();
+        let appId = $("input[name=appId]").val();
+        let number = $("input[name=number]").val();
+        $.get(authorizeUrl, {appId: appId, number: number}, function() {
+            location.reload();
+        });
+    })
 
-    myChart1.setOption(option);
-
-    var myChart2 = echarts.init(document.querySelector('.EChartsMap .charts.echarts-bar'));
- 
-    option = {
-        tooltip : {
-            trigger: 'item'
-        },
-        legend: {
-            orient: 'vertical',
-            left: 'left',
-            data:['iphone']
-        },
-        visualMap: {
-            min: 0,
-            max: 200,
-            left: 'left',
-            top: 'bottom',
-            text:['高','低'],           // 文本，默认为数值文本
-            calculable : true
-        },
-        toolbox: {
-            show: true,
-            orient : 'vertical',
-            left: 'right',
-            top: 'center',
-            feature : {
-                mark : {show: true},
-                dataView : {show: true, readOnly: false},
-                restore : {show: true},
-                saveAsImage : {show: true}
-            }
-        },
-        series : [
-            {
-                name: '新用户下载量',
-                type: 'map',
-                mapType: 'china',
-                roam: false,
-                label: {
-                    normal: {
-                        show: false
-                    },
-                    emphasis: {
-                        show: true
-                    }
-                },
-                data:[
-                    {name: '北京',value: Math.round(Math.random()*1000)},
-                    {name: '天津',value: Math.round(Math.random()*1000)},
-                    {name: '上海',value: Math.round(Math.random()*1000)},
-                    {name: '重庆',value: Math.round(Math.random()*1000)},
-                    {name: '河北',value: Math.round(Math.random()*1000)},
-                    {name: '河南',value: Math.round(Math.random()*1000)},
-                    {name: '云南',value: Math.round(Math.random()*1000)},
-                    {name: '辽宁',value: Math.round(Math.random()*1000)},
-                    {name: '黑龙江',value: Math.round(Math.random()*1000)},
-                    {name: '湖南',value: Math.round(Math.random()*1000)},
-                    {name: '安徽',value: Math.round(Math.random()*1000)},
-                    {name: '山东',value: Math.round(Math.random()*1000)},
-                    {name: '新疆',value: Math.round(Math.random()*1000)},
-                    {name: '江苏',value: Math.round(Math.random()*1000)},
-                    {name: '浙江',value: Math.round(Math.random()*1000)},
-                    {name: '江西',value: Math.round(Math.random()*1000)},
-                    {name: '湖北',value: Math.round(Math.random()*1000)},
-                    {name: '广西',value: Math.round(Math.random()*1000)},
-                    {name: '甘肃',value: Math.round(Math.random()*1000)},
-                    {name: '山西',value: Math.round(Math.random()*1000)},
-                    {name: '内蒙古',value: Math.round(Math.random()*1000)},
-                    {name: '陕西',value: Math.round(Math.random()*1000)},
-                    {name: '吉林',value: Math.round(Math.random()*1000)},
-                    {name: '福建',value: Math.round(Math.random()*1000)},
-                    {name: '贵州',value: Math.round(Math.random()*1000)},
-                    {name: '广东',value: Math.round(Math.random()*1000)},
-                    {name: '青海',value: Math.round(Math.random()*1000)},
-                    {name: '西藏',value: Math.round(Math.random()*1000)},
-                    {name: '四川',value: Math.round(Math.random()*1000)},
-                    {name: '宁夏',value: Math.round(Math.random()*1000)},
-                    {name: '海南',value: Math.round(Math.random()*1000)},
-                    {name: '台湾',value: Math.round(Math.random()*1000)},
-                    {name: '香港',value: Math.round(Math.random()*1000)},
-                    {name: '澳门',value: Math.round(Math.random()*1000)}
-                ]
-            }
-        ]
-    };
-
-    myChart2.setOption(option);
-});
-
-// updateApp.html
-$('#updateIpaTab').on("click", function() {
-    $('#updateApkTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
-    $('#updateIpaTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
-    $('#updateApkForm').hide();
-    $('#updateIpaForm').show();
-})
-
-$('#updateApkTab').on("click", function() {
-    $('#updateIpaTab').removeClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
-    $('#updateApkTab').addClass("ivu-tabs-tab-active ivu-tabs-tab-focused");
-    $('#updateIpaForm').hide();
-    $('#updateApkForm').show();
-})
-
-//email.html
-let baseUrl = "https://ios.app88.xin";
-let sendCodeUrl = baseUrl + "/email/send_code";
-
-$("#sendCode").on("click", function() {
-    let email = $("input[name=email]").val();
-    $.get(sendCodeUrl, {email: email, type: 2});
-})
-
-//avatar.html
-$('.ivu-upload-drag:not(input)').on('click', function() {
-    $("input.ivu-upload-input").click();
-})
-
-$("input.ivu-upload-input").on('change', function() {
-    $("form").submit();
+    $("#generateAuthorizeCodeForm button:contains('取消')").on("click", function () {
+        event.preventDefault();
+        $('#generateAuthorizeCodeForm .ivu-modal-close').click();
+    })
 });
