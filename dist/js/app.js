@@ -81,8 +81,12 @@ $(document).ready(function() {
 
     // dashbaord.html
 
-    $('.mini-card').on("click", function() {
+    $('.mini-card:contains("基本信息")').on("click", function() {
         window.location.href = "./settings.html";
+    })
+
+    $('.mini-card:contains("财务信息")').on("click", function() {
+        window.location.href = "./financialInfo.html";
     })
 
     $('.ivu-poptip-popper').hover(function() {
@@ -114,6 +118,10 @@ $(document).ready(function() {
 
     $(".setting-item:eq(3)").on("click", function() {
         window.location.href = "./password.html";
+    })
+
+    $(".setting-item:eq(4)").on("click", function() {
+        window.location.href = "./financialInfo.html";
     })
 
     $('.z-setting').on("click", function() {
