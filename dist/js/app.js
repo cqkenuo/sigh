@@ -125,6 +125,13 @@ $(document).ready(function() {
         $(".app-list .ivu-select-dropdown").toggle();
     })
 
+    $("#appname").on("change", function() {
+        let appId = $(this).val();
+        if (appId > 0) {
+            window.location.href = "?aid=" + appId;
+        }
+    })
+
     //statistics.html
     $(".ivu-date-picker-rel").flatpickr({
         mode: "range",

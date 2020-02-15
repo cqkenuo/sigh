@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel=icon href=favicon.ico>
+  <title>下载记录</title>
+  <link href=./dist/css/app.css rel="stylesheet">
+  <link href=./dist/css/main.css rel="stylesheet">
+  <link href=./dist/css/user.css rel="stylesheet">
+  <link href=./dist/css/menu.css rel="stylesheet">
+  <link href="./dist/css/webuploader.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div data-v-4c978c7a="" class="lay-main ivu-layout">
+      <div data-v-4c978c7a="" class="ivu-layout-header">
+        <div data-v-4c978c7a="" class="header-col logo">
+          <a data-v-4c978c7a="" href="./dashboard.html" class="router-link-exact-active router-link-active">
+            <img data-v-4c978c7a="" src="./dist/images/logo.png" alt=""><span data-v-4c978c7a="">iOS App超级签名</span>
+          </a>
+        </div>
+        <div data-v-4c978c7a="" class="header-col breadcrumb">
+          <div data-v-4c978c7a="" class="serve-info">
+            <span data-v-4c978c7a="">技术客服：</span>
+            <ul data-v-4c978c7a="" class="serve-qq-list">
+              <li data-v-4c978c7a="">Telegram : +13214095102</li>
+            </ul>
+          </div>
+        </div>
+        <div data-v-4c978c7a="" class="header-col user">
+          <div data-v-4c978c7a="" class="ivu-dropdown">
+            <div class="ivu-dropdown-rel">
+              <button data-v-4c978c7a="" class="Poptip-btn">
+                <span data-v-4c978c7a="" class="ml10">17603326303</span>
+                <i data-v-4c978c7a="" class="arrow-down s-icon s-icon-arrow-down"
+                  style="font-size: 10px; color: rgb(127, 143, 164);"></i>
+                <img data-v-4c978c7a="" src="./dist/images/avatar.png" alt="" class="poptip-btn-img">
+              </button>
+            </div>
+            <div class="ivu-select-dropdown" style="display: none;">
+              <ul data-v-4c978c7a="" class="ivu-dropdown-menu">
+                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                    class="s-icon s-icon-modify"></i><span data-v-4c978c7a="">修改资料</span></li>
+                <li data-v-4c978c7a="" class="ivu-dropdown-item"><i data-v-4c978c7a=""
+                    class="s-icon s-icon-sign-out"></i><span data-v-4c978c7a="">退出</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-v-4c978c7a="" class="lay-body ivu-layout ivu-layout-has-sider">
+        <div data-v-4c978c7a="" class="ivu-layout-sider">
+          <span class="ivu-layout-sider-zero-width-trigger" style="display: none;"><i
+              class="ivu-icon ivu-icon-ios-menu"></i></span>
+          <div class="ivu-layout-sider-children">
+            <ul data-v-5c2ab2a8="" data-v-4c978c7a="" class="ivu-menu ivu-menu-light ivu-menu-vertical" width="200px">
+              <a data-v-5c2ab2a8="" href="./dashboard.html" target="_self" class="ivu-menu-item"><i data-v-5c2ab2a8=""
+                  class="iconfont icondailishangshouye"></i>首页</a>
+              <a data-v-5c2ab2a8="" href="./settings.html" target="_self" class="menusec ivu-menu-item"><i
+                  data-v-5c2ab2a8="" class="menusecond appstore-iconfont appstore-iconxitongshezhi"
+                  style="font-size: 21px;"></i>账户设置</a>
+              <a data-v-5c2ab2a8="" href="./downloadlog.html" target="_self"
+                class="ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i data-v-5c2ab2a8=""
+                  class="s-icon s-icon-ad-plan"></i>下载记录</a>
+              <hr data-v-5c2ab2a8="" class="menu-hr">
+              <div data-v-5c2ab2a8="" class="add-app-layer">
+                <button id="postApp" data-v-278d6aea="" data-v-5c2ab2a8="" class="s-btn s-btn-primary"><i
+                    data-v-5c2ab2a8="" class="s-icon s-icon-drop-down" data-v-278d6aea=""
+                    style="font-size: 15px; color: rgb(255, 255, 255);"></i><span data-v-5c2ab2a8=""
+                    data-v-278d6aea="">发布应用</span></button>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!---->
+        <div data-v-4c978c7a="" class="s-main-content ivu-layout-content">
+          <div data-v-c7831bca="" data-v-4c978c7a="" class="content ivu-layout">
+            <div data-v-c7831bca="" class="container mt20 ivu-row">
+              <h1 data-v-c7831bca="">下载设备记录(同一设备下载多次都会记录，同一APP多次下载只扣一次设备量)</h1>
+            </div>
+            <div data-v-c7831bca="" class="s-content-header ivu-layout-header">
+              <div data-v-c7831bca="" class="header-left">
+                <div data-v-c7831bca="" class="Tabs-box ivu-tabs ivu-tabs-card">
+                  <div class="ivu-tabs-bar">
+                    <!---->
+                    <div tabindex="0" class="ivu-tabs-nav-container">
+                      <div class="ivu-tabs-nav-wrap" style="position: relative;"><span
+                          class="ivu-tabs-nav-prev ivu-tabs-nav-scroll-disabled"><i
+                            class="ivu-icon ivu-icon-ios-arrow-back"></i></span><span
+                          class="ivu-tabs-nav-next ivu-tabs-nav-scroll-disabled"><i
+                            class="ivu-icon ivu-icon-ios-arrow-forward"></i></span>
+                        <div class="ivu-tabs-nav-scroll">
+                          <div class="ivu-tabs-nav">
+                            <div class="ivu-tabs-ink-bar ivu-tabs-ink-bar-animated"
+                              style="visibility: hidden; width: 96px; transform: translate3d(0px, 0px, 0px);"></div>
+                            <div class="ivu-tabs-tab ivu-tabs-tab-active ivu-tabs-tab-focused">
+                              下载记录
+                            </div>
+                          </div>
+                        </div><object tabindex="-1" type="text/html" data="about:blank"
+                          style="display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none; padding: 0px; margin: 0px; opacity: 0; z-index: -1000; pointer-events: none;"></object>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ivu-tabs-content ivu-tabs-content-animated"
+                    style="transform: translateX(0%) translateZ(0px);">
+                    <div data-v-c7831bca="" class="ivu-tabs-tabpane" style="visibility: visible;"></div>
+                    <div data-v-c7831bca="" class="ivu-tabs-tabpane" style="visibility: hidden;"></div>
+                    <div data-v-c7831bca="" class="ivu-tabs-tabpane" style="visibility: hidden;"></div>
+                    <div data-v-c7831bca="" class="ivu-tabs-tabpane" style="visibility: hidden;"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-c7831bca="" class="header-right">
+                <select id="appname" class="ivu-input" name="appname" autofocus="" style="width: 200px;">
+                    <option value=""> 选择您要查看的APP </option>
+                    <option value="750"> 开心棋牌 </option>
+                </select>
+                <label for="unittype" class="col-lg-5 control-label">您当前选择的APP为: <span style="color: red;">开心棋牌 </span></label>
+              </div>
+            </div>
+            <div data-v-c7831bca="" class="header tab-content mb40 ivu-layout-content">
+              <div data-v-e4784192="" data-v-c7831bca="">
+                <div data-v-e4784192="" class="ivu-table-wrapper">
+                  <div class="ivu-table ivu-table-default ivu-table-with-fixed-top">
+                    <!---->
+                    <div class="ivu-table-header">
+                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                        <colgroup>
+                          <col width="200">
+                          <col width="500">
+                          <col width="500">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="">
+                              <div class="ivu-table-cell"><span class="">#</span></div>
+                            </th>
+                            <th class="">
+                              <div class="ivu-table-cell"><span class="">设备UUID</span></div>
+                            </th>
+                            <th class="">
+                              <div class="ivu-table-cell"><span class="">下载时间</span></div>
+                            </th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="ivu-table-body">
+                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                        <colgroup>
+                          <col width="200">
+                          <col width="500">
+                          <col width="500">
+                        </colgroup>
+                        <tbody class="ivu-table-tbody">
+                          <tr class="ivu-table-row">
+                            <td class="">
+                                <div class="ivu-table-cell">
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="ivu-table-cell">
+                                    <span>XXXXXXXXXXXXXXXX</span>
+                                </div>
+                            </td>
+                            <td class="">
+                              <div class="ivu-table-cell">
+                                <span>2020-02-09</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="ivu-table-tip" style="display: none;">
+                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                        <tbody>
+                          <tr>
+                            <td><span>暂无筛选结果</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-e0e591f0="" data-v-c7831bca="" show-sizer="" show-elevator="" show-total="" placement="bottom" class="page">
+                <ul data-v-e0e591f0="" class="ivu-page">
+                    <span class="ivu-page-total">共<em data-v-e0e591f0="" class="total-count">1</em>条数据</span>
+                    <li title="上一页" class="ivu-page-prev ivu-page-disabled">
+                        <a><i class="ivu-icon ivu-icon-ios-arrow-back"></i></a>
+                    </li>
+                    <li title="1" class="ivu-page-item ivu-page-item-active">
+                        <a>1</a>
+                    </li>
+                  <li title="下一页" class="ivu-page-next ivu-page-disabled">
+                      <a><i class="ivu-icon ivu-icon-ios-arrow-forward"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+    </div>
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/app.js"></script>
+</body>
+
+</html>
