@@ -1,5 +1,6 @@
 # sigh
-A copy site of http://app2.xin/
+
+iOS 超级签名
 
 Login:
 
